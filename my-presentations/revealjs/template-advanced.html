@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Awesome title here</title>
+    <meta name="description" content="Description">
+    <meta name="author" content="Your name">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../../revealjs/src/reveal.js-master/css/reveal.css">
+    <link rel="stylesheet" href="../../revealjs/src/reveal.js-master/css/theme/black.css" id="theme"> <!-- see css/theme for themes -->
+    <link rel="stylesheet" href="../../revealjs/src/reveal.js-master/lib/css/zenburn.css">
+
+    <script>
+      if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>Cthulhu 2016</h1>
+            <h3>Why choose the lesser evil?</h3>
+        </section>
+
+        <section>
+            <!-- A single slide with LaTeX equations alone and in-text: -->
+            \[P(X = x) = \frac{1}{Z}\exp\left(\sum_j w_j f_j(x)\right),\]
+            <p>where \(f_j(x)\) is a feature \(f \in \{0, 1\}\).</p>
+        </section>
+
+        <section>
+            <!-- Several vertical slides are done simply by having sections within a section. -->
+            <section>
+                <h2>Make folds, not loops.</h2>
+                <!-- You need to specify the language (c, cpp, r etc etc are supported): -->
+<pre><code class="haskell">-- Sum numbers from 1 to n the Haskell way:
+    sumTo n = foldl1 (+) [1..n]
+</code></pre>
+            </section>
+            <section>
+                <h2>Weird Scala operator for folding</h2>
+                <!-- Code examples cannot be indented. -->
+<pre><code class="scala">// Three ways to fold in Scala:
+    def sumTo0(n: Int) = (1 to n).foldLeft(0) { (x, y) => x + y }
+    def sumTo1(n: Int) = (1 to n).foldLeft(0) { _ + _ }
+    def sumTo2(n: Int) = (0 /: (1 to n)) { _ + _ }
+</code></pre>
+            </section>
+            <section>
+                <h3>Roman list</h3>
+                <ol style='list-style-type: upper-roman'>
+                    <li>Heh?</li>
+                    <li>Ohh?</li>
+                </ol>
+            </section>
+        </section>
+
+        <section>
+            <!-- A single slide with a table. -->
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Ontological commitment</th>
+                    <th>Epistemological commitment</th>
+                </tr>
+                <tr>
+                    <td>First-Order Logic</td>
+                    <td>Facts, objects, relations</td>
+                    <td>True | False | Unknown</td>
+                </tr>
+                <tr>
+                    <td>Probability Theory</td>
+                    <td>Facts</td>
+                    <td>Degree of belief \(\in [0, 1]\)</td>
+                </tr>
+                <tr>
+                    <td>Markov Logic</td>
+                    <td>Facts, objects, relations</td>
+                    <td>Degree of belief \(\in [0, 1]\)</td>
+                </tr>
+            </table>
+            <p><i>Adapted from <a href='http://aima.cs.berkeley.edu/'>Russell &amp; Norvig</a> (3rd ed., p 290).</i></p>
+        </section>
+
+        <section>
+            <!-- Quotes and images -->
+
+            <p><blockquote>&ldquo;[...] we re-emphasize that MaxEnt is a mathematically
+            proven method for inferring the most likely probability
+            distribution if our knowledge about that distribution can be
+            described as a set of constraints on the distribution&rdquo; - Harte et
+            al. (2008).</blockquote></p>
+
+            <h3>...but proven under what system?</h3>
+
+            <!-- Skilling's "Axioms of Maximum Entropy" and Cox's "Algebra of Probable Inference" -->
+
+            <p><img src='img/xkcd_804.png' alt='xkcd 804'/></p>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Markdown support
+
+                ...for those who swing that way, not that there's anything wrong with that.
+            </script>
+        </section>
+
+    </div>
+</div>
+
+<script src="../../revealjs/src/reveal.js-master/js/reveal.js"></script>
+<script src="../../revealjs/src/reveal.js-master/lib/js/head.min.js"></script>
+<script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        dependencies: [
+          { src: '../../revealjs/src/reveal.js-master/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help

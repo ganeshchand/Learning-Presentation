@@ -33,13 +33,56 @@
         <!-- Linking Slides: It's done by using slide id#
         -->
         <section>
+            <h1>Linked Slide</h1>
 
+            <p>
+                <a href="#/detailSlide">Click here to learn more</a>
+            </p>
+        </section>
+        <section id="detailSlide">
+            <h1>Detail Slide</h1>
+        </section>
+
+        <!-- Fragments -->
+        <section class="fragments">
+            <p>Slide Fragmentation Demo Slide</p>
+
+            <h2 class="fragment">Heading</h2>
+
+            <h3 class="fragment">Sub-heading</h3>
+            <ul>
+                <li class="fragment">One</li>
+                <li class="fragment">Two</li>
+                <li class="fragment">Three</li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- options available: grow, shrink, roll-in, fade-out, highlight-green -->
+            <p class ="fragment grow"> Animated Fragments</p>
         </section>
     </div>
 </div>
 
-<script>
-    Reveal.initialize([])
+<script type="text/javascript">
+
+    Reveal.initialize({
+
+    rollingLinks: true, // rolling effect on all links
+
+    controls: true, // set to false if you don't want default controls. By default, it is set to true
+
+    slideNumber: true, // by default, set to false
+
+    autoSlide: 1000, // 1000 ms = 1 sec
+
+    transition: 'concave', // options: are 'default', 'cube', 'page', 'concave', 'zoom', 'linear', 'fade', 'none'
+
+    transitionSpeed: 'slow',     // options: 'default', 'slow', 'fast'
+
+    });
+
+
 </script>
 
 </body>
