@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ganesh Chand">
+
+    <meta name="apple-mobile-web-app-capable" content="true">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <title>Kathmandu-Apache-Spark-Meetup - Introduction to Apache Spark</title>
+    <link href="css/reveal.css" rel="stylesheet">
+    <!--<link href="css/theme/black.css" rel="stylesheet">-->
+    <link href="css/theme/white.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!--javascripts -->
+    <script src="js/reveal.js" type="text/javascript"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+
+    <!-- Printing and PDF exports -->
+    <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+
+    <div class="slides">
+        <div class="slides header">
+            <p id="headerText">Kathmandu Apache Spark Meetup</p></div>
+        <section data-background-color="white"> <!-- slide#1 -->
+            <h1>Introduction to Apache Spark</h1>
+            <div style="height: 500px">
+                <img src="image/apache_spark_logo_2.jpeg">
+                <p>Lightening Fast Cluster Computing</p>
+            </div>
+
+            <div class='instruction'>
+                Use &nbsp; &lt; &nbsp; and &nbsp; &gt; &nbsp; arrows to navigate
+            </div>
+
+        </section>
+        <section class="fragments" data-background-transition="concave" data-background-color="white">
+            <h2>Agenda</h2>
+            <ul>
+                <li class="fragment roll-in">About RoyalePI</li>
+                <li class="fragment roll-in">Overview and Intro by Databricks</li>
+                <li class="fragment roll-in">Big Data Overview</li>
+                <li class="fragment roll-in">Apache Spark Introduction</li>
+                <li class="fragment roll-in">Hands-on</li>
+                <li class="fragment roll-in">Hands-on</li>
+            </ul>
+        </section>
+        <section data-background-transition="concave" data-background-color="white">
+            <section data-background-transition="zoom">
+                <h2>About Me</h2>
+
+                <p>Software Engineer (Data & Analytics) @ Guideiwre Software, San Francisco Bay Area </p>
+
+                <div style="height: 500px">
+                    <img src="image/ganesh_big_data1.jpg">
+                </div>
+
+            </section>
+            <section class="fragments" data-autoslide="2000">
+                <h3>Education</h3>
+                <ul>
+                    <li class="fragment roll-in">School</li>
+                    <ul>
+                        <li class="fragment roll-in">DPS, Doti</li>
+                        <li class="fragment roll-in">LRI, Kathmandu</li>
+                    </ul>
+                    <li class="fragment roll-in">College</li>
+                    <ul>
+                        <li class="fragment roll-in">AMC PU College, Bangalore</li>
+                        <li class="fragment roll-in">BVB College of Engg. and Tech, Hubli, Karnataka</li>
+                    </ul>
+                    <li class="fragment roll-in">Others</li>
+                    <ul>
+                        <li class="fragment roll-in">Continuing Studies - Stanford University and UCSC Santa Cruz</li>
+                    </ul>
+                </ul>
+            </section>
+            <section class="fragments" data-autoslide="2000">
+                <h3>Professional Experience</h3>
+                <ul>
+                    <li class="fragment roll-in">11 years</li>
+                    <li class="fragment roll-in">Past Companies: SunGard, Accenture, American National Insurance
+                        Company
+                    </li>
+                    <li class="fragment roll-in">Places: Bangalore, Mumbai, Yokohama, Houston, San Francisco</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>About RoyalePi</h2>
+            <section>
+                <p>Who We Are?</p>
+                <ul>
+                    <li>Kathmandu based Startup, founded in 2013</li>
+                    <li>Business Management Software</li>
+                </ul>
+            </section>
+            <section>
+                <p>What We Do?</p>
+            </section>
+            <section>
+                <p>Why Spark?</p>
+            </section>
+            <section>
+                <p>More</p>
+            </section>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+        <section>
+            <h1>Next Slide</h1>
+        </section>
+
+
+        <div class="slides footer">
+            <p id="footerCopyRight"><span>Copyright ©2015 RoyalePi Technology</span>
+                <!--<span id="footerContact"><a href="contact@royalepi.com">email: contact@royalepi.com</a></span>-->
+            </p>
+        </div>
+
+    </div>
+</div>
+<script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+     /** parallax background effect
+      parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+      parallaxBackgroundHorizontal: 200,
+      parallaxBackgroundVertical: 50,
+      **/
+
+        controls: true,
+        progress: true,
+        history: true,
+        slideNumber: true,
+        keyboard: true,
+        overview: true,
+        touch: true,
+        fragments: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        /** dependencies **/
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+      // displayed upon load, hides when slide changes
+  Reveal.addEventListener('slidechanged', function(event) {
+    document.querySelector('.instruction').style.display = 'none';
+  });
+
+
+
+</script>
+
+</body>
+</html>
