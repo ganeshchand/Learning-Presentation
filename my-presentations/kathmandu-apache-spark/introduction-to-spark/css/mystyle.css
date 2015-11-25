@@ -44,3 +44,30 @@ float: center;
 html.img-right div.slide-background.present {
     background-position: right;
 }
+
+footer.sourceCredit {
+    font-style: italic;
+    font-size: 10px;
+
+}
+
+strong {
+    font-size: 40px !important;
+    color: red !important;
+}
+
+/** Used for URLs used as part of the list **/
+li > footer {
+color:blue;
+font-size: 15px !important;
+}
+
+/** Applied at UL level for list font **/
+.slideList {
+font-size: 20px !important;
+}
+
+/** Used for lists in a slide **/
+.slideList li {
+margin-top: 20px;
+}

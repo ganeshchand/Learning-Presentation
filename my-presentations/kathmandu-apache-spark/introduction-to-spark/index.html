@@ -28,8 +28,6 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-
-
     </script>
 
     <!--[if lt IE 9]>
@@ -47,8 +45,10 @@
             <p id="headerText">Kathmandu Apache Spark Meetup</p></div>
         <section data-background-color="white"> <!-- slide#1 -->
             <h1>Introduction to Apache Spark</h1>
+
             <div style="height: 500px">
                 <img src="image/apache_spark_logo_2.jpeg">
+
                 <p>Lightening Fast Cluster Computing</p>
             </div>
 
@@ -65,7 +65,8 @@
                 <li class="fragment roll-in">Big Data Overview</li>
                 <li class="fragment roll-in">Apache Spark Introduction</li>
                 <li class="fragment roll-in">Hands-on</li>
-                <li class="fragment roll-in">Hands-on</li>
+                <li class="fragment roll-in">Hackathon</li>
+                <li class="fragment roll-in">Announcements</li>
             </ul>
         </section>
         <section data-background-transition="concave" data-background-color="white">
@@ -129,30 +130,437 @@
             </section>
         </section>
         <section>
-            <h1>Next Slide</h1>
+            <h1>Overview and Q&A by Databricks</h1>
         </section>
         <section>
-            <h1>Next Slide</h1>
-        </section>
-        <section>
-            <h1>Next Slide</h1>
-        </section>
-        <section>
-            <h1>Next Slide</h1>
-        </section>
-        <section>
-            <h1>Next Slide</h1>
-        </section>
-        <section>
-            <h1>Next Slide</h1>
-        </section>
-        <section>
-            <h1>Next Slide</h1>
-        </section>
-        <section>
-            <h1>Next Slide</h1>
-        </section>
+            <section>
+                <h1>Big Data Overview</h1>
 
+                <div style="height: 500px">
+                    <img src="image/big_data_head.jpg">
+                </div>
+            </section>
+            <section class="fragments">
+                <h2>What is Big Data?</h2>
+
+                <p class="fragment roll-in">It depends...</p>
+            </section>
+            <section>
+                <p>Google & Oxford</p>
+
+                <div style="height: 500px">
+                    <img src="image/big_data_oxford_definition.jpg">
+                </div>
+            </section>
+            <section>
+                <blockquote>"Big data is a broad term for data sets so <strong>large or
+                    complex</strong>
+                    that traditional data processing applications are inadequate."
+                    <br>- wikipedia
+                </blockquote>
+            </section>
+            <section>
+                <p>As per <strong>Siri...</strong></p>
+
+                <div style="height: 500px">
+                    <img src="image/siri_big-data.PNG">
+                </div>
+            </section>
+            <section>
+                <p>The Four Vs...</p>
+
+                <div style="height: 500px">
+                    <img src="image/four-V-of-big-data.jpg">
+                    <footer class="sourceCredit">
+                        source:http://www.datasciencecentral.com/profiles/blogs/data-veracity
+                    </footer>
+                </div>
+                <aside class="notes">
+                    Volume- refers to the vast amounts of data generated every second. Just think of all the emails,
+                    twitter messages, photos, video clips, sensor data etc. we produce and share every second.
+                    We are not talking Terabytes but Zettabytes or Brontobytes.
+                    On Facebook alone we send 10 billion messages per day, click the "like' button 4.5 billion
+                    times and upload 350 million new pictures each and every day.
+                    This increasingly makes data sets too large to store and analyse using traditional database
+                    technology.
+                    With big data technology we can now store and use these data sets with the help of distributed
+                    systems,
+                    where parts of the data is stored in different locations and brought together by software.
+
+                    Velocity - Velocity refers to the speed at which new data is generated and the speed at which data
+                    moves
+                    around. Just think of social media messages going viral in seconds, the speed at which
+                    credit card transactions are checked for fraudulent activities, or the milliseconds it takes trading
+                    systems to analyse social media networks to pick up signals that trigger decisions to buy or sell
+                    shares.
+                    Big data technology allows us now to analyse the data while it is being generated, without ever
+                    putting it
+                    into databases.
+                    "If only Bradley arm was long.." tweet by Ellen during the Oscars ceremony - surpassed the million
+                    mark within hours.
+
+                    Variety refers to the different types of data we can now use. In the past we focused on structured
+                    data
+                    that neatly fits into tables or relational databases, such as financial data (e.g. sales by product
+                    or region).
+                    In fact, 80% of the world’s data is now unstructured, and therefore can’t easily be put into tables
+                    (think of
+                    photos, video sequences or social media updates). With big data technology we can now harness
+                    differed types
+                    of data (structured and unstructured) including messages, social media conversations, photos, sensor
+                    data, video
+                    or voice recordings and bring them together with more traditional,
+                    structured data.
+
+                    Veracity refers to the messiness or trustworthiness of the data. With many forms of big data,
+                    quality and accuracy
+                    are less controllable (just think of Twitter posts with hash tags, abbreviations, typos and
+                    colloquial speech as
+                    well as the reliability and accuracy of content) but big data and analytics technology now allows us
+                    to work with
+                    these type of data. The volumes often make up for the lack of quality or accuracy.
+
+                </aside>
+            </section>
+            <section>
+                <p>Actually, The Five Vs....</p>
+
+                <p>5th V - <strong>VALUE</strong></p>
+                <aside class="notes">Having access to big data is no good unless we can turn it into value.
+                    Companies are starting to generate amazing value from their big data. So you can safely argue that
+                    'value' is the most important V of Big Data. It is important that businesses make a business case
+                    for any attempt to collect and leverage big data. It is so easy to fall into the buzz trap and
+                    embark on big data initiatives without a clear understanding of costs and benefits.
+                </aside>
+            </section>
+            <section>
+                <p>Let's see the values...</p>
+            </section>
+            <section>
+                <ul>
+                    <li>Understanding and Targeting Customers - Amazon</li>
+                    <li>Understanding and Optimizing Business Processes - Talent Acquisition</li>
+                    <li>Personal Quantification and Performance Optimization</li>
+                    <li>Improving Health and Public Health</li>
+                    <li>Improving Sports Performance</li>
+                    <li>Improving Science and Research</li>
+                    <li>Improving Security and Law Enforcement</li>
+                </ul>
+                <aside class="notes">
+                    Source: https://www.linkedin.com/pulse/20131113065157-64875646-the-awesome-ways-big-data-is-used-today-to-change-our-world
+                    1. Understanding and Targeting Customers
+
+                    This is one of the biggest and most publicized areas of big data use today. Here, big data is used to better understand customers and their behaviors and preferences. Companies are keen to expand their traditional data sets with social media data, browser logs as well as text analytics and sensor data to get a more complete picture of their customers. The big objective, in many cases, is to create predictive models. You might remember the example of U.S. retailer Target, who is now able to very accurately predict when one of their customers will expect a baby. Using big data, Telecom companies can now better predict customer churn; Wal-Mart can predict what products will sell, and car insurance companies understand how well their customers actually drive. Even government election campaigns can be optimized using big data analytics. Some believe, Obama’s win after the 2012 presidential election campaign was due to his team’s superior ability to use big data analytics.
+
+                    2. Understanding and Optimizing Business Processes
+
+                    Big data is also increasingly used to optimize business processes. Retailers are able to optimize their stock based on predictions generated from social media data, web search trends and weather forecasts. One particular business process that is seeing a lot of big data analytics is supply chain or delivery route optimization. Here, geographic positioning and radio frequency identification sensors are used to track goods or delivery vehicles and optimize routes by integrating live traffic data, etc. HR business processes are also being improved using big data analytics. This includes the optimization of talent acquisition – Moneyball style, as well as the measurement of company culture and staff engagement using big data tools.
+
+                    3. Personal Quantification and Performance Optimization
+
+                    Big data is not just for companies and governments but also for all of us individually. We can now benefit from the data generated from wearable devices such as smart watches or smart bracelets. Take the Up band from Jawbone as an example: the armband collects data on our calorie consumption, activity levels, and our sleep patterns. While it gives individuals rich insights, the real value is in analyzing the collective data. In Jawbone’s case, the company now collects 60 years worth of sleep data every night. Analyzing such volumes of data will bring entirely new insights that it can feed back to individual users. The other area where we benefit from big data analytics is finding love - online this is. Most online dating sites apply big data tools and algorithms to find us the most appropriate matches.
+
+                    4. Improving Healthcare and Public Health
+
+                    The computing power of big data analytics enables us to decode entire DNA strings in minutes and will allow us to find new cures and better understand and predict disease patterns. Just think of what happens when all the individual data from smart watches and wearable devices can be used to apply it to millions of people and their various diseases. The clinical trials of the future won’t be limited by small sample sizes but could potentially include everyone! Big data techniques are already being used to monitor babies in a specialist premature and sick baby unit. By recording and analyzing every heart beat and breathing pattern of every baby, the unit was able to develop algorithms that can now predict infections 24 hours before any physical symptoms appear. That way, the team can intervene early and save fragile babies in an environment where every hour counts. What’s more, big data analytics allow us to monitor and predict the developments of epidemics and disease outbreaks. Integrating data from medical records with social media analytics enables us to monitor flu outbreaks in real-time, simply by listening to what people are saying, i.e. “Feeling rubbish today - in bed with a cold”.
+
+                    5. Improving Sports Performance
+
+                    Most elite sports have now embraced big data analytics. We have the IBM SlamTracker tool for tennis tournaments; we use video analytics that track the performance of every player in a football or baseball game, and sensor technology in sports equipment such as basket balls or golf clubs allows us to get feedback (via smart phones and cloud servers) on our game and how to improve it. Many elite sports teams also track athletes outside of the sporting environment – using smart technology to track nutrition and sleep, as well as social media conversations to monitor emotional wellbeing.
+
+                    6. Improving Science and Research
+
+                    Science and research is currently being transformed by the new possibilities big data brings. Take, for example, CERN, the Swiss nuclear physics lab with its Large Hadron Collider, the world’s largest and most powerful particle accelerator. Experiments to unlock the secrets of our universe – how it started and works - generate huge amounts of data. The CERN data center has 65,000 processors to analyze its 30 petabytes of data. However, it uses the computing powers of thousands of computers distributed across 150 data centers worldwide to analyze the data. Such computing powers can be leveraged to transform so many other areas of science and research.
+
+                    7. Optimizing Machine and Device Performance
+
+                    Big data analytics help machines and devices become smarter and more autonomous. For example, big data tools are used to operate Google’s self-driving car. The Toyota Prius is fitted with cameras, GPS as well as powerful computers and sensors to safely drive on the road without the intervention of human beings. Big data tools are also used to optimize energy grids using data from smart meters. We can even use big data tools to optimize the performance of computers and data warehouses.
+
+                    8. Improving Security and Law Enforcement.
+
+                    Big data is applied heavily in improving security and enabling law enforcement. I am sure you are aware of the revelations that the National Security Agency (NSA) in the U.S. uses big data analytics to foil terrorist plots (and maybe spy on us). Others use big data techniques to detect and prevent cyber attacks. Police forces use big data tools to catch criminals and even predict criminal activity and credit card companies use big data use it to detect fraudulent transactions.
+
+                    9. Improving and Optimizing Cities and Countries
+
+                    Big data is used to improve many aspects of our cities and countries. For example, it allows cities to optimize traffic flows based on real time traffic information as well as social media and weather data. A number of cities are currently piloting big data analytics with the aim of turning themselves into Smart Cities, where the transport infrastructure and utility processes are all joined up. Where a bus would wait for a delayed train and where traffic signals predict traffic volumes and operate to minimize jams.
+
+                    10. Financial Trading
+
+                    My final category of big data application comes from financial trading. High-Frequency Trading (HFT) is an area where big data finds a lot of use today. Here, big data algorithms are used to make trading decisions. Today, the majority of equity trad
+                </aside>
+
+
+            </section>
+
+            <section class="fragments" data-background-transition="concave" data-background-color="white">
+                <h2>Interesting Facts About Big Data</h2>
+                <img src="image/big_data_fact_1.png">
+                <footer class="sourceCredit"> source: https://mydigitaleyeshadow.wordpress.com/</footer>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <p>
+                    The NSA is though to analyze <strong>1.6%</strong>
+                    of all global traffic - around <strong>30 petabytes</strong>(30 million gigabytes) <strong>every
+                    day</strong></p>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <p>Around <strong>100 hours</strong> of videos are uploaded to YouTube <strong>every minute</strong>
+                    and it would take you around <strong>15</strong> years to watch every video uploaded by users in one
+                    day.</p>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <p>If you burned all of the data created in just <strong>one day onto DVDs</strong>, you could stack
+                    them on
+                    top of each
+                    other and reach the moon - <strong>twice</strong>.
+                </p>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <p>The big data industry is expected to grow from <strong>US$20.2 billion</strong>
+                    in 2013 to about <strong>US$54.3 billion</strong>.
+                </p>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <p><strong>1.9 million</strong> IT jobs will be created in the US by 2015 to carry out big data
+                    projects.
+                    Each of those will be supported by 3 new jobs created outside of IT - meaning a
+                    total of <strong>6 million</strong> new jobs .
+                </p>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <blockquote>
+                    “There were <strong>5 exabytes</strong> of information created between the dawn of civilization
+                    through 2003, but that much information is now created <strong>every 2 days</strong>”
+                    <br>- Eric Schmidt, Google in 2010
+                </blockquote>
+            </section>
+            <section data-background-transition="concave">
+                <!--<h2>Interesting Facts About Big Data</h2>-->
+                <blockquote>
+                    “Information is the <strong>oil of the 21st century</strong>, and analytics is the combustion
+                    engine.”
+                    <br>Peter Sondergaard, Gartner Research
+                </blockquote>
+                <p class="fragment roll-in">No surprise - Facebook, Gmail, LinkedIn are all free!</p>
+            </section>
+            <section>
+                <h1>Hadoop</h1>
+
+                <div style="height: 500px">
+                    <img src="image/hadoop_elephant.jpg">
+                </div>
+            </section>
+            <section class="fragments">
+                <h2>What is What is Hadoop?</h2>
+
+                <p class="fragment roll-in">The Blind Men and the Elephant...</p>
+                <div class="fragment roll-in" style="height: 500px">
+                    <img src="image/the-blind-men-and-the-elephant.jpg">
+                </div>
+            </section>
+            <section>
+
+                <ul class="slideList">
+                    <img src="image/doug_cutting.jpg">
+                    <li class="fragment roll-in">
+                        Hadoop is an open-source framework for big data.
+                    </li>
+                    <li class="fragment roll-in">
+                        Hadoop is reliable and fault tolerant with no rely on hardware for
+                        these properties.
+                    </li>
+                    <li class="fragment roll-in">
+                        Horizontal scalability from single computer to thousands of cluster nodes.
+                    </li>
+                    <li class="fragment roll-in">
+                        Hadoop was created by Doug Cutting and Mike Cafarella in 2005. Inspired by nspired by Google's white papers
+                    </li>
+                    <li class="fragment roll-in">
+                        MapReduce White Paper by Jorrrey Dean and Sanjay Ghemawat -
+                        <footer>http://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
+                        </footer>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    Hadoop was created by Doug Cutting and Mike Cafarella in 2005. Cutting, who was working at Yahoo! at
+                    the time, named it after his son's toy elephant.
+                    It was originally developed to support distribution for the Nutch search engine project.
+                </aside>
+            </section>
+            <section>
+                <p>Hadoop Ecosystem</p>
+                <div style="height: 500px">
+                    <img src="image/hadoop_ecosystem.jpg">
+                </div>
+                <p><a>https://hadoopecosystemtable.github.io/</a></p>
+                <aside class="notes">
+                    Hadoop Architecture:
+
+                    The Apache Hadoop framework includes following four modules:
+
+                    Hadoop Common: Contains Java libraries and utilities needed by other Hadoop modules. These libraries give filesystem and OS level abstraction and comprise of the essential Java files and scripts that are required to start Hadoop.
+                    Hadoop Distributed File System (HDFS): A distributed file-system that provides high-throughput access to application data on the community machines thus providing very high aggregate bandwidth across the cluster.
+                    Hadoop YARN: A resource-management framework responsible for job scheduling and cluster resource management.
+                    Hadoop MapReduce: This is a YARN- based programming model for parallel processing of large data sets.
+
+                    It is quite interesting to envision how we could adopt the Hadoop eco system within the realms of DevOps. I will try to cover it in upcoming series.  Hadoop managed by the Apache Foundation is a powerful open-source platform written in java that is capable of processing large amounts of heterogeneous data-sets at scale in a distributive fashion on cluster of computers using simple programming models. It is designed to scale up from single server to thousands of machines, each offering local computation and storage and has become an in-demand technical skill. Hadoop is an Apache top-level project being built and used by a global community of contributors and users.
+
+                    Hadoop Architecture:
+
+                    The Apache Hadoop framework includes following four modules:
+
+                    Hadoop Common: Contains Java libraries and utilities needed by other Hadoop modules. These libraries give filesystem and OS level abstraction and comprise of the essential Java files and scripts that are required to start Hadoop.
+                    Hadoop Distributed File System (HDFS): A distributed file-system that provides high-throughput access to application data on the community machines thus providing very high aggregate bandwidth across the cluster.
+                    Hadoop YARN: A resource-management framework responsible for job scheduling and cluster resource management.
+                    Hadoop MapReduce: This is a YARN- based programming model for parallel processing of large data sets.
+                    Below diagram portray four components that are available in Hadoop framework.
+
+                    Hadoop
+
+                    All the modules in Hadoop are designed with a fundamental assumption i.e., hardware failure, so should be automatically controlled in software by the framework. Beyond HDFS, YARN and MapReduce, the entire Apache Hadoop “platform” is now commonly considered to consist of a number of related projects as well: Apache Pig, Apache Hive, Apache HBase, and others.
+
+                    Hadoop Ecosystem:
+
+                    Hadoop has gained its popularity due to its ability of storing, analyzing and accessing large amount of data, quickly and cost effectively through clusters of commodity hardware. It wont be wrong if we say that Apache Hadoop is actually a collection of several components and not just a single product.
+
+                    With Hadoop Ecosystem there are several commercial along with an open source products which are broadly used to make Hadoop laymen accessible and more usable.
+
+                    The following sections provide additional information on the individual components:
+
+                    MapReduce
+
+                    Hadoop MapReduce is a software framework for easily writing applications which process big amounts of data in-parallel on large clusters of commodity hardware in a reliable, fault-tolerant manner. In terms of programming, there are two functions which are most common in MapReduce.
+
+                    The Map Task: Master computer or node takes input and convert it into divide it into smaller parts and distribute it on other worker nodes. All worker nodes solve their own small problem and give answer to the master node.
+                    The Reduce Task: Master node combines all answers coming from worker node and forms it in some form of output which is answer of our big distributed problem.
+                    Generally both the input and the output are reserved in a file-system. The framework is responsible for scheduling tasks, monitoring them and even re-executes the failed tasks.
+
+                    Hadoop Distributed File System (HDFS)
+
+                    HDFS is a distributed file-system that provides high throughput access to data. When data is pushed to HDFS, it automatically splits up into multiple blocks and stores/replicates the data thus ensuring high availability and fault tolerance.
+
+                    Note: A file consists of many blocks (large blocks of 64MB and above).
+
+                    Here are the main components of HDFS:
+
+                    NameNode: It acts as the master of the system. It maintains the name system i.e., directories and files and manages the blocks which are present on the DataNodes.
+                    DataNodes: They are the slaves which are deployed on each machine and provide the actual stor­age. They are responsible for serving read and write requests for the clients.
+                    Secondary NameNode: It is responsible for performing periodic checkpoints. In the event of NameNode failure, you can restart the NameNode using the checkpoint.
+                    Hive
+
+                    Hive is part of the Hadoop ecosystem and provides an SQL like interface to Hadoop. It is a data warehouse system for Hadoop that facilitates easy data summarization, ad-hoc queries, and the analysis of large datasets stored in Hadoop compatible file systems.
+
+                    It provides a mechanism to project structure onto this data and query the data using a SQL-like language called HiveQL. Hive also allows traditional map/reduce programmers to plug in their custom map­pers and reducers when it is inconvenient or inefficient to express this logic in HiveQL.
+
+                    The main building blocks of Hive are –
+
+                    Metastore – To store metadata about columns, partition and system catalogue.
+                    Driver – To manage the lifecycle of a HiveQL statement
+                    Query Compiler – To compiles HiveQL into a directed acyclic graph.
+                    Execution Engine – To execute the tasks in proper order which are produced by the compiler.
+                    HiveServer – To provide a Thrift interface and a JDBC / ODBC server.
+                    HBase (Hadoop DataBase)
+
+                    HBase is a distributed, column oriented database and uses HDFS for the underlying storage. As said earlier, HDFS works on write once and read many times pattern, but this isn’t a case always. We may require real time read/write random access for huge dataset; this is where HBase comes into the picture. HBase is built on top of HDFS and distributed on column-oriented database.
+
+                    Here are the main components of HBase:
+
+                    HBase Master: It is responsible for negotiating load balancing across all RegionServers and maintains the state of the cluster. It is not part of the actual data storage or retrieval path.
+                    RegionServer: It is deployed on each machine and hosts data and processes I/O requests.
+                    Zookeeper
+
+                    ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization and providing group services which are very useful for a variety of distributed systems. HBase is not operational without ZooKeeper.
+
+                    Mahout
+
+                    Mahout is a scalable machine learning library that implements various different approaches machine learning. At present Mahout contains four main groups of algorithms:
+
+                    Recommendations, also known as collective filtering
+                    Classifications, also known as categorization
+                    Clustering
+                    Frequent itemset mining, also known as parallel frequent pattern mining
+                    Algorithms in the Mahout library belong to the subset that can be executed in a distributed fashion and have been written to be executable in MapReduce. Mahout is scalable along three dimensions: It scales to reasonably large data sets by leveraging algorithm properties or implementing versions based on Apache Hadoop.
+
+                    Sqoop (SQL-to-Hadoop)
+
+                    Sqoop is a tool designed for efficiently transferring structured data from SQL Server and SQL Azure to HDFS and then uses it in MapReduce and Hive jobs. One can even use Sqoop to move data from HDFS to SQL Server.
+
+                    Apache Spark:
+
+                    Apache Spark is a general compute engine that offers fast data analysis on a large scale. Spark is built on HDFS but bypasses MapReduce and instead uses its own data processing framework. Common uses cases for Apache Spark include real-time queries, event stream processing, iterative algorithms, complex operations and machine learning.
+
+                    Pig
+
+                    Pig is a platform for analyzing and querying huge data sets that consist of a high-level language for expressing data analysis programs, coupled with infrastructure for evaluating these programs. Pig’s built-in operations can make sense of semi-structured data, such as log files, and the language is extensible using Java to add support for custom data types and transformations.
+
+                    Pig has three main key properties:
+
+                    Extensibility
+                    Optimization opportunities
+                    Ease of programming
+                    The salient property of Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to handle very large data sets. At the present time, Pig’s infrastructure layer consists of a compiler that produces sequences of MapReduce programs.
+
+                    Oozie
+
+                    Apache Oozie is a workflow/coordination system to manage Hadoop jobs.
+
+                    Flume
+
+                    Flume is a framework for harvesting, aggregating and moving huge amounts of log data or text files in and out of Hadoop. Agents are populated throughout ones IT infrastructure inside web servers, application servers and mobile devices. Flume itself has a query processing engine, so it’s easy to transform each new batch of data before it is shuttled to the intended sink.
+
+                    Ambari:
+
+                    Ambari was created to help manage Hadoop. It offers support for many of the tools in the Hadoop ecosystem including Hive, HBase, Pig, Sqoop and Zookeeper. The tool features a management dashboard that keeps track of cluster health and can help diagnose performance issues.
+
+                    Conclusion
+
+                    Hadoop is powerful because it is extensible and it is easy to integrate with any component. Its popularity is due in part to its ability to store, analyze and access large amounts of data, quickly and cost effectively across clusters of commodity hardware. Apache Hadoop is not actually a single product but instead a collection of several components. When all these components are merged, it makes the Hadoop very user friendly.
+                </aside>
+            </section>
+            <section>
+                <div style="height: 500px">
+                    <img src="image/hadoop-is-complicated.jpg">
+                </div>
+                <p class="fragment roll-in"><strong>It's Complicated, I know...</strong><p/>
+
+                <aside class="notes">
+                    Hadopp has its limitations. Hadoop was designed for batch processing over
+                    periods oftime in the hour or even day ranges.
+                    Many efforts have been done to make it faster and some of the tools mentioned
+                    in the preivous sldies have beeen improved, lowering the latency to the
+                    seconds range. But, it is far from being fast enough for applications that require
+                    sub-seconds latency/resoponse time.
+
+                    Another problem is that its ecosystem is very rich and diverse.
+                    Uses many programming lanauges and different data abstracgtions.
+                    It results in a steep learning curve, maintenance nightmare, difficult to
+                    setup and configure.
+                </aside>
+
+            </section>
+
+        </section>
+        <section>
+            <h1>Apache Spark Introduction</h1>
+        </section>
+        <section>
+            <h1>Hands-on</h1>
+        </section>
+        <section>
+            <h1>Hackathon</h1>
+        </section>
+        <section>
+            <h1>Announcements</h1>
+        </section>
+        <section>
+            <h1>Thank You!</h1>
+        </section>
 
         <div class="slides footer">
             <p id="footerCopyRight"><span>Copyright ©2015 RoyalePi Technology</span>
@@ -182,7 +590,7 @@
         fragments: true,
         center: true,
         theme: Reveal.getQueryHash().theme,
-        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
         /** dependencies **/
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -198,6 +606,11 @@
   Reveal.addEventListener('slidechanged', function(event) {
     document.querySelector('.instruction').style.display = 'none';
   });
+
+
+
+
+
 
 
 
