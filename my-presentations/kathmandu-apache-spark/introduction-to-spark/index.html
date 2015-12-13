@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">n
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ganesh Chand">
 
     <meta name="apple-mobile-web-app-capable" content="true">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 
     <title>Kathmandu-Apache-Spark-Meetup - Introduction to Apache Spark</title>
     <link href="css/reveal.css" rel="stylesheet">
@@ -19,15 +18,16 @@
     <!--javascripts -->
     <script src="js/reveal.js" type="text/javascript"></script>
     <script src="lib/js/head.min.js"></script>
+    f
     <script src="plugin/highlight/highlight.js"></script>
 
     <!-- Printing and PDF exports -->
     <script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
     <!--[if lt IE 9]>
@@ -59,14 +59,14 @@
         </section>
         <section class="fragments" data-background-transition="concave" data-background-color="white">
             <h2>Agenda</h2>
-            <ul>
-                <li class="fragment roll-in">About RoyalePI</li>
-                <li class="fragment roll-in">Overview and Intro by Databricks</li>
-                <li class="fragment roll-in">Big Data Overview</li>
-                <li class="fragment roll-in">Apache Spark Introduction</li>
-                <li class="fragment roll-in">Hands-on</li>
-                <li class="fragment roll-in">Hackathon</li>
-                <li class="fragment roll-in">Announcements</li>
+            <ul class="fragment roll-in">
+                <li class="fragment highlight-current-blue">About RoyalePI</li>
+                <li class="fragment highlight-current-blue">Overview and Intro by Databricks</li>
+                <li class="fragment highlight-current-blue">Big Data Overview</li>
+                <li class="fragment highlight-current-blue">Apache Spark Introduction</li>
+                <li class="fragment highlight-current-blue">Hands-on</li>
+                <li class="fragment highlight-current-blue">Hackathon</li>
+                <li class="fragment highlight-current-blue">Announcements</li>
             </ul>
         </section>
         <section data-background-transition="concave" data-background-color="white">
@@ -115,22 +115,46 @@
             <section>
                 <p>Who We Are?</p>
                 <ul>
-                    <li>Kathmandu based Startup, founded in 2013</li>
-                    <li>Business Management Software</li>
+                    <li class="fragment roll-in">Kathmandu based Startup, founded in 2013</li>
+                    <li class="fragment roll-in">Development Center - Kathmandu and Dhangadhi</li>
+                    <li class="fragment roll-in">4 members</li>
+                    <li class="fragment roll-in">Our Motto -
+                        <block class="royalePILogo">ins
+                            <blocK class="pi">π</block>
+                            re
+                        </block>
+                    </li>
                 </ul>
             </section>
             <section>
                 <p>What We Do?</p>
+                <ul>
+                    <li class="fragment roll-in">Product - Akalico</li>
+                    <li class="fragment roll-in">Data Analytics products and Services</li>
+                </ul>
             </section>
             <section>
-                <p>Why Spark?</p>
+                <p>Akalico Overview</p>
+                <!--Add number of customers, customer demography, industry verticals-->
+                <p>Need details....</p>
             </section>
             <section>
-                <p>More</p>
+                <p>what's Next?</p>
+                <ul>
+                    <li>Data Driven Analytic applications - Work-in-progress</li>
+                    <li>Why Spark?</li>
+                </ul>
+            </section>
+            <section>
+                <p>Want to learn more, contact royalePi team</p>
             </section>
         </section>
         <section>
             <h1>Overview and Q&A by Databricks</h1>
+            <ul>
+                <li>Denny Lee</li>
+                <li>Jason Pohl</li>
+            </ul>
         </section>
         <section>
             <section>
@@ -234,59 +258,112 @@
                 </aside>
             </section>
             <section>
-                <p>Let's see the values...</p>
-            </section>
-            <section>
-                <ul>
-                    <li>Understanding and Targeting Customers - Amazon</li>
-                    <li>Understanding and Optimizing Business Processes - Talent Acquisition</li>
-                    <li>Personal Quantification and Performance Optimization</li>
-                    <li>Improving Health and Public Health</li>
-                    <li>Improving Sports Performance</li>
-                    <li>Improving Science and Research</li>
-                    <li>Improving Security and Law Enforcement</li>
+                <p>Let's see some usage cases</p>
+                <!--<ul class="slideList">-->
+                <ul class="fragment roll-in">
+                    <li class="fragment highlight-current-blue">Understanding and Targeting Customers - amazon.com</li>
+                    <li class="fragment highlight-current-blue">Understanding and Optimizing Business Processes - Talent
+                        Acquisition
+                    </li>
+                    <li class="fragment highlight-current-blue">Personal Quantification and Performance Optimization -
+                        Fitness Apps
+                    </li>
+                    <li class="fragment highlight-current-blue">Improving Healthcare service - Disease Prevention and
+                        Control
+                    </li>
+                    <li class="fragment highlight-current-blue">Improving Sports Performance - Sports Science,
+                        MoneyBall
+                    </li>
+                    <li class="fragment highlight-current-blue">Improving customer Service - Guest Analytics for
+                        Hotels
+                    </li>
+                    <li class="fragment highlight-current-blue">Improving Security and Law Enforcement - Predictive
+                        policing
+                    </li>
                 </ul>
                 <aside class="notes">
-                    Source: https://www.linkedin.com/pulse/20131113065157-64875646-the-awesome-ways-big-data-is-used-today-to-change-our-world
+                    Source:
+                    https://www.linkedin.com/pulse/20131113065157-64875646-the-awesome-ways-big-data-is-used-today-to-change-our-world
                     1. Understanding and Targeting Customers
 
-                    This is one of the biggest and most publicized areas of big data use today. Here, big data is used to better understand customers and their behaviors and preferences. Companies are keen to expand their traditional data sets with social media data, browser logs as well as text analytics and sensor data to get a more complete picture of their customers. The big objective, in many cases, is to create predictive models. You might remember the example of U.S. retailer Target, who is now able to very accurately predict when one of their customers will expect a baby. Using big data, Telecom companies can now better predict customer churn; Wal-Mart can predict what products will sell, and car insurance companies understand how well their customers actually drive. Even government election campaigns can be optimized using big data analytics. Some believe, Obama’s win after the 2012 presidential election campaign was due to his team’s superior ability to use big data analytics.
+                    This is one of the biggest and most publicized areas of big data use today. Here, big data is used
+                    to better understand customers and their behaviors and preferences.
+                    Companies are keen to expand their traditional data sets with social media data, browser logs as
+                    well as text analytics and sensor data to get a more complete picture
+                    of their customers. The big objective, in many cases, is to create predictive models. You might
+                    remember the example of U.S. retailer Target, who is now able to very
+                    accurately predict when one of their customers will expect a baby. Using big data, Telecom companies
+                    can now better predict customer churn; Wal-Mart can predict what
+                    products will sell, and car insurance companies understand how well their customers actually drive.
+                    Even government election campaigns can be optimized using big data
+                    analytics. Some believe, Obama’s win after the 2012 presidential election campaign was due to his
+                    team’s superior ability to use big data analytics.
 
                     2. Understanding and Optimizing Business Processes
 
-                    Big data is also increasingly used to optimize business processes. Retailers are able to optimize their stock based on predictions generated from social media data, web search trends and weather forecasts. One particular business process that is seeing a lot of big data analytics is supply chain or delivery route optimization. Here, geographic positioning and radio frequency identification sensors are used to track goods or delivery vehicles and optimize routes by integrating live traffic data, etc. HR business processes are also being improved using big data analytics. This includes the optimization of talent acquisition – Moneyball style, as well as the measurement of company culture and staff engagement using big data tools.
+                    Big data is also increasingly used to optimize business processes. Retailers are able to optimize
+                    their stock based on predictions generated from social media data,
+                    web search trends and weather forecasts. One particular business process that is seeing a lot of big
+                    data analytics is supply chain or delivery route optimization.
+                    Here, geographic positioning and radio frequency identification sensors are used to track goods or
+                    delivery vehicles and optimize routes by integrating live traffic data,
+                    etc. HR business processes are also being improved using big data analytics. This includes the
+                    optimization of talent acquisition – Moneyball style, as well as the
+                    measurement of company culture and staff engagement using big data tools.
 
                     3. Personal Quantification and Performance Optimization
 
-                    Big data is not just for companies and governments but also for all of us individually. We can now benefit from the data generated from wearable devices such as smart watches or smart bracelets. Take the Up band from Jawbone as an example: the armband collects data on our calorie consumption, activity levels, and our sleep patterns. While it gives individuals rich insights, the real value is in analyzing the collective data. In Jawbone’s case, the company now collects 60 years worth of sleep data every night. Analyzing such volumes of data will bring entirely new insights that it can feed back to individual users. The other area where we benefit from big data analytics is finding love - online this is. Most online dating sites apply big data tools and algorithms to find us the most appropriate matches.
+                    Big data is not just for companies and governments but also for all of us individually. We can now
+                    benefit from the data generated from wearable devices such as smart
+                    watches or smart bracelets. Take the Up band from Jawbone as an example: the armband collects data
+                    on our calorie consumption, activity levels, and our sleep patterns.
+                    While it gives individuals rich insights, the real value is in analyzing the collective data. In
+                    Jawbone’s case, the company now collects 60 years worth of sleep data
+                    every night. Analyzing such volumes of data will bring entirely new insights that it can feed back
+                    to individual users. The other area where we benefit from big data
+                    analytics is finding love - online this is. Most online dating sites apply big data tools and
+                    algorithms to find us the most appropriate matches.
 
                     4. Improving Healthcare and Public Health
 
-                    The computing power of big data analytics enables us to decode entire DNA strings in minutes and will allow us to find new cures and better understand and predict disease patterns. Just think of what happens when all the individual data from smart watches and wearable devices can be used to apply it to millions of people and their various diseases. The clinical trials of the future won’t be limited by small sample sizes but could potentially include everyone! Big data techniques are already being used to monitor babies in a specialist premature and sick baby unit. By recording and analyzing every heart beat and breathing pattern of every baby, the unit was able to develop algorithms that can now predict infections 24 hours before any physical symptoms appear. That way, the team can intervene early and save fragile babies in an environment where every hour counts. What’s more, big data analytics allow us to monitor and predict the developments of epidemics and disease outbreaks. Integrating data from medical records with social media analytics enables us to monitor flu outbreaks in real-time, simply by listening to what people are saying, i.e. “Feeling rubbish today - in bed with a cold”.
+                    The computing power of big data analytics enables us to decode entire DNA strings in minutes and
+                    will allow us to find new cures and better understand and predict
+                    disease patterns. Just think of what happens when all the individual data from smart watches and
+                    wearable devices can be used to apply it to millions of people and
+                    their various diseases. The clinical trials of the future won’t be limited by small sample sizes but
+                    could potentially include everyone! Big data techniques are
+                    already being used to monitor babies in a specialist premature and sick baby unit. By recording and
+                    analyzing every heart beat and breathing pattern of every baby,
+                    the unit was able to develop algorithms that can now predict infections 24 hours before any physical
+                    symptoms appear. That way, the team can intervene early and save
+                    fragile babies in an environment where every hour counts. What’s more, big data analytics allow us
+                    to monitor and predict the developments of epidemics and disease
+                    outbreaks. Integrating data from medical records with social media analytics enables us to monitor
+                    flu outbreaks in real-time, simply by listening to what people are saying, i.e. “Feeling rubbish
+                    today - in bed with a cold”.
 
                     5. Improving Sports Performance
 
-                    Most elite sports have now embraced big data analytics. We have the IBM SlamTracker tool for tennis tournaments; we use video analytics that track the performance of every player in a football or baseball game, and sensor technology in sports equipment such as basket balls or golf clubs allows us to get feedback (via smart phones and cloud servers) on our game and how to improve it. Many elite sports teams also track athletes outside of the sporting environment – using smart technology to track nutrition and sleep, as well as social media conversations to monitor emotional wellbeing.
+                    Most elite sports have now embraced big data analytics. We have the IBM SlamTracker tool for tennis
+                    tournaments; we use video analytics that track the performance
+                    of every player in a football or baseball game, and sensor technology in sports equipment such as
+                    basket balls or golf clubs allows us to get feedback (via smart
+                    phones and cloud servers) on our game and how to improve it. Many elite sports teams also track
+                    athletes outside of the sporting environment – using smart technology
+                    to track nutrition and sleep, as well as social media conversations to monitor emotional wellbeing.
 
-                    6. Improving Science and Research
-
-                    Science and research is currently being transformed by the new possibilities big data brings. Take, for example, CERN, the Swiss nuclear physics lab with its Large Hadron Collider, the world’s largest and most powerful particle accelerator. Experiments to unlock the secrets of our universe – how it started and works - generate huge amounts of data. The CERN data center has 65,000 processors to analyze its 30 petabytes of data. However, it uses the computing powers of thousands of computers distributed across 150 data centers worldwide to analyze the data. Such computing powers can be leveraged to transform so many other areas of science and research.
-
-                    7. Optimizing Machine and Device Performance
-
-                    Big data analytics help machines and devices become smarter and more autonomous. For example, big data tools are used to operate Google’s self-driving car. The Toyota Prius is fitted with cameras, GPS as well as powerful computers and sensors to safely drive on the road without the intervention of human beings. Big data tools are also used to optimize energy grids using data from smart meters. We can even use big data tools to optimize the performance of computers and data warehouses.
+                    6. Improving customer Service
 
                     8. Improving Security and Law Enforcement.
 
-                    Big data is applied heavily in improving security and enabling law enforcement. I am sure you are aware of the revelations that the National Security Agency (NSA) in the U.S. uses big data analytics to foil terrorist plots (and maybe spy on us). Others use big data techniques to detect and prevent cyber attacks. Police forces use big data tools to catch criminals and even predict criminal activity and credit card companies use big data use it to detect fraudulent transactions.
+                    Big data is applied heavily in improving security and enabling law enforcement. I am sure you are
+                    aware of the revelations that the National Security Agency (NSA)
+                    in the U.S. uses big data analytics to foil terrorist plots (and maybe spy on us).
+                    Others use big data techniques to detect and prevent cyber attacks. Police forces use big data tools
+                    to catch criminals and even predict criminal activity and
+                    credit card companies use big data use it to detect fraudulent transactions.
 
-                    9. Improving and Optimizing Cities and Countries
 
-                    Big data is used to improve many aspects of our cities and countries. For example, it allows cities to optimize traffic flows based on real time traffic information as well as social media and weather data. A number of cities are currently piloting big data analytics with the aim of turning themselves into Smart Cities, where the transport infrastructure and utility processes are all joined up. Where a bus would wait for a delayed train and where traffic signals predict traffic volumes and operate to minimize jams.
-
-                    10. Financial Trading
-
-                    My final category of big data application comes from financial trading. High-Frequency Trading (HFT) is an area where big data finds a lot of use today. Here, big data algorithms are used to make trading decisions. Today, the majority of equity trad
                 </aside>
 
 
@@ -313,9 +390,7 @@
             <section data-background-transition="concave">
                 <!--<h2>Interesting Facts About Big Data</h2>-->
                 <p>If you burned all of the data created in just <strong>one day onto DVDs</strong>, you could stack
-                    them on
-                    top of each
-                    other and reach the moon - <strong>twice</strong>.
+                    them on top of each other and reach the moon - <strong>twice</strong>.
                 </p>
             </section>
             <section data-background-transition="concave">
@@ -360,6 +435,7 @@
                 <h2>What is What is Hadoop?</h2>
 
                 <p class="fragment roll-in">The Blind Men and the Elephant...</p>
+
                 <div class="fragment roll-in" style="height: 500px">
                     <img src="image/the-blind-men-and-the-elephant.jpg">
                 </div>
@@ -379,11 +455,13 @@
                         Horizontal scalability from single computer to thousands of cluster nodes.
                     </li>
                     <li class="fragment roll-in">
-                        Hadoop was created by Doug Cutting and Mike Cafarella in 2005. Inspired by nspired by Google's white papers
+                        Hadoop was created by Doug Cutting and Mike Cafarella in 2005. Inspired by nspired by Google's
+                        white papers
                     </li>
                     <li class="fragment roll-in">
                         MapReduce White Paper by Jorrrey Dean and Sanjay Ghemawat -
-                        <footer>http://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
+                        <footer>
+                            http://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
                         </footer>
                     </li>
                 </ul>
@@ -395,6 +473,7 @@
             </section>
             <section>
                 <p>Hadoop Ecosystem</p>
+
                 <div style="height: 500px">
                     <img src="image/hadoop_ecosystem.jpg">
                 </div>
@@ -404,59 +483,105 @@
 
                     The Apache Hadoop framework includes following four modules:
 
-                    Hadoop Common: Contains Java libraries and utilities needed by other Hadoop modules. These libraries give filesystem and OS level abstraction and comprise of the essential Java files and scripts that are required to start Hadoop.
-                    Hadoop Distributed File System (HDFS): A distributed file-system that provides high-throughput access to application data on the community machines thus providing very high aggregate bandwidth across the cluster.
-                    Hadoop YARN: A resource-management framework responsible for job scheduling and cluster resource management.
-                    Hadoop MapReduce: This is a YARN- based programming model for parallel processing of large data sets.
+                    Hadoop Common: Contains Java libraries and utilities needed by other Hadoop modules. These libraries
+                    give filesystem and OS level abstraction and comprise
+                    of the essential Java files and scripts that are required to start Hadoop.
+                    Hadoop Distributed File System (HDFS): A distributed file-system that provides high-throughput
+                    access to application data on the community machines thus
+                    providing very high aggregate bandwidth across the cluster.
+                    Hadoop YARN: A resource-management framework responsible for job scheduling and cluster resource
+                    management.
+                    Hadoop MapReduce: This is a YARN- based programming model for parallel processing of large data
+                    sets.
 
-                    It is quite interesting to envision how we could adopt the Hadoop eco system within the realms of DevOps. I will try to cover it in upcoming series.  Hadoop managed by the Apache Foundation is a powerful open-source platform written in java that is capable of processing large amounts of heterogeneous data-sets at scale in a distributive fashion on cluster of computers using simple programming models. It is designed to scale up from single server to thousands of machines, each offering local computation and storage and has become an in-demand technical skill. Hadoop is an Apache top-level project being built and used by a global community of contributors and users.
+                    It is quite interesting to envision how we could adopt the Hadoop eco system within the realms of
+                    DevOps. I will try to cover it in upcoming series.
+                    Hadoop managed by the Apache Foundation is a powerful open-source platform written in java that is
+                    capable of processing large amounts of heterogeneous
+                    data-sets at scale in a distributive fashion on cluster of computers using simple programming
+                    models. It is designed to scale up from single server to
+                    thousands of machines, each offering local computation and storage and has become an in-demand
+                    technical skill. Hadoop is an Apache top-level project being
+                    built and used by a global community of contributors and users.
 
                     Hadoop Architecture:
 
                     The Apache Hadoop framework includes following four modules:
 
-                    Hadoop Common: Contains Java libraries and utilities needed by other Hadoop modules. These libraries give filesystem and OS level abstraction and comprise of the essential Java files and scripts that are required to start Hadoop.
-                    Hadoop Distributed File System (HDFS): A distributed file-system that provides high-throughput access to application data on the community machines thus providing very high aggregate bandwidth across the cluster.
-                    Hadoop YARN: A resource-management framework responsible for job scheduling and cluster resource management.
-                    Hadoop MapReduce: This is a YARN- based programming model for parallel processing of large data sets.
+                    Hadoop Common: Contains Java libraries and utilities needed by other Hadoop modules. These libraries
+                    give filesystem and OS level abstraction and comprise
+                    of the essential Java files and scripts that are required to start Hadoop.
+                    Hadoop Distributed File System (HDFS): A distributed file-system that provides high-throughput
+                    access to application data on the community machines thus
+                    providing very high aggregate bandwidth across the cluster.
+                    Hadoop YARN: A resource-management framework responsible for job scheduling and cluster resource
+                    management.
+                    Hadoop MapReduce: This is a YARN- based programming model for parallel processing of large data
+                    sets.
                     Below diagram portray four components that are available in Hadoop framework.
 
                     Hadoop
 
-                    All the modules in Hadoop are designed with a fundamental assumption i.e., hardware failure, so should be automatically controlled in software by the framework. Beyond HDFS, YARN and MapReduce, the entire Apache Hadoop “platform” is now commonly considered to consist of a number of related projects as well: Apache Pig, Apache Hive, Apache HBase, and others.
+                    All the modules in Hadoop are designed with a fundamental assumption i.e., hardware failure, so
+                    should be automatically controlled in software by the framework.
+                    Beyond HDFS, YARN and MapReduce, the entire Apache Hadoop “platform” is now commonly considered to
+                    consist of a number of related projects as well: Apache Pig,
+                    Apache Hive, Apache HBase, and others.
 
                     Hadoop Ecosystem:
 
-                    Hadoop has gained its popularity due to its ability of storing, analyzing and accessing large amount of data, quickly and cost effectively through clusters of commodity hardware. It wont be wrong if we say that Apache Hadoop is actually a collection of several components and not just a single product.
+                    Hadoop has gained its popularity due to its ability of storing, analyzing and accessing large amount
+                    of data, quickly and cost effectively through clusters of
+                    commodity hardware. It wont be wrong if we say that Apache Hadoop is actually a collection of
+                    several components and not just a single product.
 
-                    With Hadoop Ecosystem there are several commercial along with an open source products which are broadly used to make Hadoop laymen accessible and more usable.
+                    With Hadoop Ecosystem there are several commercial along with an open source products which are
+                    broadly used to make Hadoop laymen accessible and more usable.
 
                     The following sections provide additional information on the individual components:
 
                     MapReduce
 
-                    Hadoop MapReduce is a software framework for easily writing applications which process big amounts of data in-parallel on large clusters of commodity hardware in a reliable, fault-tolerant manner. In terms of programming, there are two functions which are most common in MapReduce.
+                    Hadoop MapReduce is a software framework for easily writing applications which process big amounts
+                    of data in-parallel on large clusters of commodity hardware in
+                    a reliable, fault-tolerant manner. In terms of programming, there are two functions which are most
+                    common in MapReduce.
 
-                    The Map Task: Master computer or node takes input and convert it into divide it into smaller parts and distribute it on other worker nodes. All worker nodes solve their own small problem and give answer to the master node.
-                    The Reduce Task: Master node combines all answers coming from worker node and forms it in some form of output which is answer of our big distributed problem.
-                    Generally both the input and the output are reserved in a file-system. The framework is responsible for scheduling tasks, monitoring them and even re-executes the failed tasks.
+                    The Map Task: Master computer or node takes input and convert it into divide it into smaller parts
+                    and distribute it on other worker nodes. All worker nodes solve
+                    their own small problem and give answer to the master node.
+                    The Reduce Task: Master node combines all answers coming from worker node and forms it in some form
+                    of output which is answer of our big distributed problem.
+                    Generally both the input and the output are reserved in a file-system. The framework is responsible
+                    for scheduling tasks, monitoring them and even re-executes the
+                    failed tasks.
 
                     Hadoop Distributed File System (HDFS)
 
-                    HDFS is a distributed file-system that provides high throughput access to data. When data is pushed to HDFS, it automatically splits up into multiple blocks and stores/replicates the data thus ensuring high availability and fault tolerance.
+                    HDFS is a distributed file-system that provides high throughput access to data. When data is pushed
+                    to HDFS, it automatically splits up into multiple blocks and
+                    stores/replicates the data thus ensuring high availability and fault tolerance.
 
                     Note: A file consists of many blocks (large blocks of 64MB and above).
 
                     Here are the main components of HDFS:
 
-                    NameNode: It acts as the master of the system. It maintains the name system i.e., directories and files and manages the blocks which are present on the DataNodes.
-                    DataNodes: They are the slaves which are deployed on each machine and provide the actual stor­age. They are responsible for serving read and write requests for the clients.
-                    Secondary NameNode: It is responsible for performing periodic checkpoints. In the event of NameNode failure, you can restart the NameNode using the checkpoint.
+                    NameNode: It acts as the master of the system. It maintains the name system i.e., directories and
+                    files and manages the blocks which are present on the DataNodes.
+                    DataNodes: They are the slaves which are deployed on each machine and provide the actual stor­age.
+                    They are responsible for serving read and write requests for the clients.
+                    Secondary NameNode: It is responsible for performing periodic checkpoints. In the event of NameNode
+                    failure, you can restart the NameNode using the checkpoint.
                     Hive
 
-                    Hive is part of the Hadoop ecosystem and provides an SQL like interface to Hadoop. It is a data warehouse system for Hadoop that facilitates easy data summarization, ad-hoc queries, and the analysis of large datasets stored in Hadoop compatible file systems.
+                    Hive is part of the Hadoop ecosystem and provides an SQL like interface to Hadoop. It is a data
+                    warehouse system for Hadoop that facilitates easy data summarization,
+                    ad-hoc queries, and the analysis of large datasets stored in Hadoop compatible file systems.
 
-                    It provides a mechanism to project structure onto this data and query the data using a SQL-like language called HiveQL. Hive also allows traditional map/reduce programmers to plug in their custom map­pers and reducers when it is inconvenient or inefficient to express this logic in HiveQL.
+                    It provides a mechanism to project structure onto this data and query the data using a SQL-like
+                    language called HiveQL. Hive also allows traditional map/reduce
+                    programmers to plug in their custom map­pers and reducers when it is inconvenient or inefficient to
+                    express this logic in HiveQL.
 
                     The main building blocks of Hive are –
 
@@ -467,44 +592,69 @@
                     HiveServer – To provide a Thrift interface and a JDBC / ODBC server.
                     HBase (Hadoop DataBase)
 
-                    HBase is a distributed, column oriented database and uses HDFS for the underlying storage. As said earlier, HDFS works on write once and read many times pattern, but this isn’t a case always. We may require real time read/write random access for huge dataset; this is where HBase comes into the picture. HBase is built on top of HDFS and distributed on column-oriented database.
+                    HBase is a distributed, column oriented database and uses HDFS for the underlying storage. As said
+                    earlier, HDFS works on write once and read many times pattern,
+                    but this isn’t a case always. We may require real time read/write random access for huge dataset;
+                    this is where HBase comes into the picture. HBase is built on
+                    top of HDFS and distributed on column-oriented database.
 
                     Here are the main components of HBase:
 
-                    HBase Master: It is responsible for negotiating load balancing across all RegionServers and maintains the state of the cluster. It is not part of the actual data storage or retrieval path.
+                    HBase Master: It is responsible for negotiating load balancing across all RegionServers and
+                    maintains the state of the cluster. It is not part of the actual
+                    data storage or retrieval path.
                     RegionServer: It is deployed on each machine and hosts data and processes I/O requests.
                     Zookeeper
 
-                    ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization and providing group services which are very useful for a variety of distributed systems. HBase is not operational without ZooKeeper.
+                    ZooKeeper is a centralized service for maintaining configuration information, naming, providing
+                    distributed synchronization and providing group services which
+                    are very useful for a variety of distributed systems. HBase is not operational without ZooKeeper.
 
                     Mahout
 
-                    Mahout is a scalable machine learning library that implements various different approaches machine learning. At present Mahout contains four main groups of algorithms:
+                    Mahout is a scalable machine learning library that implements various different approaches machine
+                    learning. At present Mahout contains four main groups of algorithms:
 
                     Recommendations, also known as collective filtering
                     Classifications, also known as categorization
                     Clustering
                     Frequent itemset mining, also known as parallel frequent pattern mining
-                    Algorithms in the Mahout library belong to the subset that can be executed in a distributed fashion and have been written to be executable in MapReduce. Mahout is scalable along three dimensions: It scales to reasonably large data sets by leveraging algorithm properties or implementing versions based on Apache Hadoop.
+                    Algorithms in the Mahout library belong to the subset that can be executed in a distributed fashion
+                    and have been written to be executable in MapReduce.
+                    Mahout is scalable along three dimensions: It scales to reasonably large data sets by leveraging
+                    algorithm properties or implementing versions based on Apache Hadoop.
 
                     Sqoop (SQL-to-Hadoop)
 
-                    Sqoop is a tool designed for efficiently transferring structured data from SQL Server and SQL Azure to HDFS and then uses it in MapReduce and Hive jobs. One can even use Sqoop to move data from HDFS to SQL Server.
+                    Sqoop is a tool designed for efficiently transferring structured data from SQL Server and SQL Azure
+                    to HDFS and then uses it in MapReduce and Hive jobs.
+                    One can even use Sqoop to move data from HDFS to SQL Server.
 
                     Apache Spark:
 
-                    Apache Spark is a general compute engine that offers fast data analysis on a large scale. Spark is built on HDFS but bypasses MapReduce and instead uses its own data processing framework. Common uses cases for Apache Spark include real-time queries, event stream processing, iterative algorithms, complex operations and machine learning.
+                    Apache Spark is a general compute engine that offers fast data analysis on a large scale. Spark is
+                    built on HDFS but bypasses MapReduce and instead uses its
+                    own data processing framework. Common uses cases for Apache Spark include real-time queries, event
+                    stream processing, iterative algorithms, complex operations
+                    and machine learning.
 
                     Pig
 
-                    Pig is a platform for analyzing and querying huge data sets that consist of a high-level language for expressing data analysis programs, coupled with infrastructure for evaluating these programs. Pig’s built-in operations can make sense of semi-structured data, such as log files, and the language is extensible using Java to add support for custom data types and transformations.
+                    Pig is a platform for analyzing and querying huge data sets that consist of a high-level language
+                    for expressing data analysis programs, coupled with infrastructure
+                    for evaluating these programs. Pig’s built-in operations can make sense of semi-structured data,
+                    such as log files, and the language is extensible using Java to add
+                    support for custom data types and transformations.
 
                     Pig has three main key properties:
 
                     Extensibility
                     Optimization opportunities
                     Ease of programming
-                    The salient property of Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to handle very large data sets. At the present time, Pig’s infrastructure layer consists of a compiler that produces sequences of MapReduce programs.
+                    The salient property of Pig programs is that their structure is amenable to substantial
+                    parallelization, which in turns enables them to handle very large data sets.
+                    At the present time, Pig’s infrastructure layer consists of a compiler that produces sequences of
+                    MapReduce programs.
 
                     Oozie
 
@@ -512,22 +662,35 @@
 
                     Flume
 
-                    Flume is a framework for harvesting, aggregating and moving huge amounts of log data or text files in and out of Hadoop. Agents are populated throughout ones IT infrastructure inside web servers, application servers and mobile devices. Flume itself has a query processing engine, so it’s easy to transform each new batch of data before it is shuttled to the intended sink.
+                    Flume is a framework for harvesting, aggregating and moving huge amounts of log data or text files
+                    in and out of Hadoop. Agents are populated throughout ones IT
+                    infrastructure inside web servers, application servers and mobile devices. Flume itself has a query
+                    processing engine, so it’s easy to transform each new batch of
+                    data before it is shuttled to the intended sink.
 
                     Ambari:
 
-                    Ambari was created to help manage Hadoop. It offers support for many of the tools in the Hadoop ecosystem including Hive, HBase, Pig, Sqoop and Zookeeper. The tool features a management dashboard that keeps track of cluster health and can help diagnose performance issues.
+                    Ambari was created to help manage Hadoop. It offers support for many of the tools in the Hadoop
+                    ecosystem including Hive, HBase, Pig, Sqoop and Zookeeper. The tool
+                    features a management dashboard that keeps track of cluster health and can help diagnose performance
+                    issues.
 
                     Conclusion
 
-                    Hadoop is powerful because it is extensible and it is easy to integrate with any component. Its popularity is due in part to its ability to store, analyze and access large amounts of data, quickly and cost effectively across clusters of commodity hardware. Apache Hadoop is not actually a single product but instead a collection of several components. When all these components are merged, it makes the Hadoop very user friendly.
+                    Hadoop is powerful because it is extensible and it is easy to integrate with any component. Its
+                    popularity is due in part to its ability to store, analyze and access
+                    large amounts of data, quickly and cost effectively across clusters of commodity hardware. Apache
+                    Hadoop is not actually a single product but instead a collection of
+                    several components. When all these components are merged, it makes the Hadoop very user friendly.
                 </aside>
             </section>
             <section>
                 <div style="height: 500px">
                     <img src="image/hadoop-is-complicated.jpg">
                 </div>
-                <p class="fragment roll-in"><strong>It's Complicated, I know...</strong><p/>
+                <p class="fragment roll-in"><strong>It's Complicated, I know...</strong>
+
+                <p/>
 
                 <aside class="notes">
                     Hadopp has its limitations. Hadoop was designed for batch processing over
@@ -547,10 +710,112 @@
 
         </section>
         <section>
-            <h1>Apache Spark Introduction</h1>
+            <section>
+                <h1>Apache Spark Introduction</h1>
+            </section>
+            <section>
+                <h1>What is Apache Spark?</h1>
+
+                <p>Apache Spark is a cluster computing platform designed to be fast and general-purpose</p>
+                <ul>
+                    <li><strong>Speed</strong> - ~100x times faster than MapReduce</li>
+                    <li><strong>Generality</strong> - Batch, iterative, interactive, stream</li>
+                    <li><strong>Accessibility</strong> - APIs in Java, Scala, Python, R</li>
+                    <li><strong>Spark can run in Hadoop clusters</strong></li>
+                </ul>
+                <aside class="notes">
+                    Speed - “ Speed is important in processing large datasets, as it means the difference
+                    between exploring data interactively and waiting minutes or hours. One of the main
+                    features Spark offers for speed is the ability to run computations in memory,
+                    but the system is also more efficient than MapReduce for complex applications running on disk.
+
+                    Generality - Spark is designed to cover a wide range of workloads that previously required
+                    separate distributed systems, including batch applications, iterative algorithms, interactive
+                    queries, and streaming. It makes it easy and inexpensive to combine different processing types,
+                    which is often necessary in production data analysis pipelines. In addition, it reduces
+                    the management burden of maintaining separate tools.
+
+                    Close Integration with other Big Data tools.
+                    Spark can run in Hadoop clusters and access any Hadoop data source, including Cassandra.
+                    Thus, investment on existing Hadoop infrastructure can still be integrated with Spark.
+                </aside>
+            </section>
+            <section>
+                <h1>History of Spark</h1>
+                <ul>
+                    <li>created in 2009 at UC Berkeley AMPLab</li>
+                    <li>Open Sourced in 2010</li>
+                    <li>Spark Paper published by Matei Zaharia,
+                        Mosharaf Chowdhury, Michael J. Franklin, Scott Shenker and Ion Stoica.
+                    </li>
+                    <li>More than 400 developers from more than 100 organizations</li>
+                    <li>It is currently the most active Apache project.</li>
+                </ul>
+                <aside class="notes">
+                    Spark was created in 2009 at UC Berkeley AMPLab and was open sourced in 2010.
+                    The original Spark paper[1] was published in the same year by Matei Zaharia,
+                    Mosharaf Chowdhury, Michael J. Franklin, Scott Shenker and Ion Stoica.
+                    Starting with only a couple of developers, it quickly attracted attention
+                    of a wider community. Today it has more than 400 developers from more than
+                    100 organizations and the list keeps growing! It is currently the most active
+                    Apache project.
+                </aside>
+            </section>
+            <section>
+                <p>Spark REPL</p>
+                <pre><code class="bash" data-trim contenteditable>
+                    /** Scala REPL **/
+
+                    $ cd $SPARK_HOME
+                    $ bin/spark-shell --master "local[*]" --driver-memory 2G
+
+                </code></pre>
+                <ul>
+                    <li>Spark context available as <strong>sc</strong>.</li>
+                    <li>SQL context available as <strong>sqlContext</strong>.</li>
+                </ul>
+            </section>
+            <section>
+                <p>Spark REPL Example - Scala</p>
+					<pre><code class="scala" data-trim contenteditable>
+                        /** Spark Scala REPL example **/
+
+                        val listOfNumber = (1 to 10).toList // List[Int]
+                        val numRDD = sc.parallelize(listOfNumber) // RDD[Int]
+                        numRDD.collect // Array[Int]
+                        numRDD.first // Int
+                        numRDD.take(2) // Int
+                        val evenNumRDD = numRDD.filter(_ % 2 == 0)
+                        val oddNumRDD = numRDD.filter(_ % 2 != 0)
+                        evenNumRDD.collect
+                        oddNumRDD.collect
+                        val unionRDD = evenNumRDD.union(oddNumRDD)
+                        unionRDD.collect
+                        val sortedUnionRDD = unionRDD.collect.sorted
+                        sortedUnionRDD.collect
+
+                        /** end **/
+                    </code></pre>
+            </section>
+            <section>
+                <h1>Spark Architecture</h1>
+            </section>
+            <section>
+                <h1>RDD</h1>
+            </section>
+            <section>
+                <h1>Spark SQL and DataFrame</h1>
+            </section>
         </section>
         <section>
             <h1>Hands-on</h1>
+            <section>
+                <h1>Pre-requsite - Apache Spark is installed and working</h1>
+
+                <p>
+                    http://github.com/ganeshchand/kathmandu-spark-meetup-intro-to-spark/notes/install-spark.md
+                </p>
+            </section>
         </section>
         <section>
             <h1>Hackathon</h1>
@@ -571,14 +836,14 @@
     </div>
 </div>
 <script>
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-     /** parallax background effect
-      parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-      parallaxBackgroundHorizontal: 200,
-      parallaxBackgroundVertical: 50,
-      **/
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        /** parallax background effect
+         parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+         parallaxBackgroundHorizontal: 200,
+         parallaxBackgroundVertical: 50,
+         **/
 
         controls: true,
         progress: true,
@@ -593,25 +858,43 @@
         transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
         /** dependencies **/
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {
+                src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            }
         ]
-      });
+    });
 
-      // displayed upon load, hides when slide changes
-  Reveal.addEventListener('slidechanged', function(event) {
-    document.querySelector('.instruction').style.display = 'none';
-  });
-
-
-
-
-
-
+    // displayed upon load, hides when slide changes
+    Reveal.addEventListener('slidechanged', function (event) {
+        document.querySelector('.instruction').style.display = 'none';
+    });
 
 
 </script>

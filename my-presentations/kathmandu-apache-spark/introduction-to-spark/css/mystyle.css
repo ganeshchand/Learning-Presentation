@@ -71,3 +71,13 @@ font-size: 20px !important;
 .slideList li {
 margin-top: 20px;
 }
+
+.royalePILogo{
+    display: inline-block;
+    font-size: 80px;
+}
+
+.pi {
+    color: red;
+    display: inline-block;
+}
