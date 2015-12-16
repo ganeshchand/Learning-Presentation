@@ -81,8 +81,7 @@ This **div** must contain another **div** with **slides** as a class attribute. 
     <aside calss="notes">Speaker Notes</aside>
     </section>
     ```
-*   To open presentation with notes, append **?notes** to the end of the presentation URL.
-
+*   To open presentation with notes, append **?notes** to the end of the presentation URL. or just press "s"
     *   Requires Pop-Up
     *   You need a web server or you may start chrome with *--allow-file-access-from-files* parameter
     

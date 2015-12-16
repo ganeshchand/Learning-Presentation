@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">n
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ganesh Chand">
@@ -18,7 +18,6 @@
     <!--javascripts -->
     <script src="js/reveal.js" type="text/javascript"></script>
     <script src="lib/js/head.min.js"></script>
-    f
     <script src="plugin/highlight/highlight.js"></script>
 
     <!-- Printing and PDF exports -->
@@ -39,34 +38,61 @@
 <div class="reveal">
 
     <!-- Any section element inside of this container is displayed as a slide -->
-
     <div class="slides">
-        <div class="slides header">
-            <p id="headerText">Kathmandu Apache Spark Meetup</p></div>
         <section data-background-color="white"> <!-- slide#1 -->
-            <h1>Introduction to Apache Spark</h1>
-
+            <div class="slidesHeader">
+                <p id="headerText">Kathmandu Apache Spark Meetup</p>
+            </div>
+            <h3 style="padding-top: 20px;">Introduction to Apache Spark</h3>
             <div style="height: 500px">
-                <img src="image/apache_spark_logo_2.jpeg">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><img src="image/apache_spark_logo_2.jpeg" aria-valuetext="test"></td>
+                        <td style="vertical-align: middle;">Lightening Fast Cluster Computing</td>
+                    </tr>
+                    </tbody>
+                </table>
 
-                <p>Lightening Fast Cluster Computing</p>
             </div>
-
-            <div class='instruction'>
-                Use &nbsp; &lt; &nbsp; and &nbsp; &gt; &nbsp; arrows to navigate
-            </div>
-
+            <!--<div class='instruction'>-->
+                <!--Use &nbsp; &lt; &nbsp; and &nbsp; &gt; &nbsp; arrows to navigate-->
+            <!--</div>-->
         </section>
         <section class="fragments" data-background-transition="concave" data-background-color="white">
             <h2>Agenda</h2>
-            <ul class="fragment roll-in">
-                <li class="fragment highlight-current-blue">About RoyalePI</li>
-                <li class="fragment highlight-current-blue">Overview and Intro by Databricks</li>
-                <li class="fragment highlight-current-blue">Big Data Overview</li>
-                <li class="fragment highlight-current-blue">Apache Spark Introduction</li>
-                <li class="fragment highlight-current-blue">Hands-on</li>
-                <li class="fragment highlight-current-blue">Hackathon</li>
-                <li class="fragment highlight-current-blue">Announcements</li>
+            <ul>
+                <li class="fragment roll-in">About Kathmandu Apache Spark Meetup</li>
+                <li class="fragment roll-in">About RoyalePI</li>
+                <li class="fragment roll-in">Q&A by Databricks</li>
+                <li class="fragment roll-in">Big Data Overview</li>
+                <li class="fragment roll-in">Apache Spark Introduction</li>
+                <li class="fragment roll-in">Hands-on</li>
+                <li class="fragment roll-in">Hackathon</li>
+                <li class="fragment roll-in">Announcements</li>
+            </ul>
+            <aside class="notes">
+            <ul>
+                <li>Greetings: Good morning! would like to thank you all for spending your Saturday with us.</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ul>
+            </aside>
+        </section>
+        <section class="fragments" data-background-transition="concave" data-background-color="white">
+            <h2>Kathmandu Apache Spark Meetup</h2>
+            <ul>
+                <li class="fragment roll-in">It's a community of professionals and enthusiasts</li>
+                <li class="fragment roll-in">Once a quarter - can vary</li>
+                <li class="fragment roll-in">Individual - share, learn and network</li>
+                <li class="fragment roll-in">Companies - promote, attract talents</li>
+                <li class="fragment roll-in">Hands-on better than just the presentation</li>
+                <li class="fragment roll-in">Presentation and technical materials to be shared</li>
+                <li class="fragment roll-in">Speakers - local, remote (US and other countries)</li>
             </ul>
         </section>
         <section data-background-transition="concave" data-background-color="white">
@@ -76,9 +102,8 @@
                 <p>Software Engineer (Data & Analytics) @ Guideiwre Software, San Francisco Bay Area </p>
 
                 <div style="height: 500px">
-                    <img src="image/ganesh_big_data1.jpg">
+                    <!--<img src="image/ganesh_big_data1.jpg">-->
                 </div>
-
             </section>
             <section class="fragments" data-autoslide="2000">
                 <h3>Education</h3>
@@ -116,11 +141,11 @@
                 <p>Who We Are?</p>
                 <ul>
                     <li class="fragment roll-in">Kathmandu based Startup, founded in 2013</li>
-                    <li class="fragment roll-in">Development Center - Kathmandu and Dhangadhi</li>
                     <li class="fragment roll-in">4 members</li>
-                    <li class="fragment roll-in">Our Motto -
+                    <li class="fragment roll-in">Development Center - Kathmandu and Dhangadhi</li>
+                    <li class="fragment roll-in">We're in it to
                         <block class="royalePILogo">ins
-                            <blocK class="pi">π</block>
+                            <block class="pi">π</block>
                             re
                         </block>
                     </li>
@@ -129,8 +154,7 @@
             <section>
                 <p>What We Do?</p>
                 <ul>
-                    <li class="fragment roll-in">Product - Akalico</li>
-                    <li class="fragment roll-in">Data Analytics products and Services</li>
+                    <li class="fragment roll-in">Build Software Products</li>
                 </ul>
             </section>
             <section>
@@ -826,12 +850,11 @@
         <section>
             <h1>Thank You!</h1>
         </section>
-
-        <div class="slides footer">
-            <p id="footerCopyRight"><span>Copyright ©2015 RoyalePi Technology</span>
-                <!--<span id="footerContact"><a href="contact@royalepi.com">email: contact@royalepi.com</a></span>-->
-            </p>
-        </div>
+        <!--<div class="slidesFooter">-->
+            <!--<p id="footerCopyRight"><span>Copyright ©2015 RoyalePi Technology</span>-->
+                <!--&lt;!&ndash;<span id="footerContact"><a href="contact@royalepi.com">email: contact@royalepi.com</a></span>&ndash;&gt;-->
+            <!--</p>-->
+        <!--</div>-->
 
     </div>
 </div>
@@ -844,7 +867,6 @@
          parallaxBackgroundHorizontal: 200,
          parallaxBackgroundVertical: 50,
          **/
-
         controls: true,
         progress: true,
         history: true,
