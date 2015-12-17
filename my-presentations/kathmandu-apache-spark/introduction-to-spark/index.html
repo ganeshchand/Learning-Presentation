@@ -52,19 +52,20 @@
                         <td><img src="image/apache_spark_logo_2.jpeg"></td>
                         <td style="vertical-align: middle;">Lightening Fast Cluster Computing</td>
                     </tr>
-                    <tr></tr>
                     </tbody>
                 </table>
+                <br>
+                <hr>
                 <p>Saturday, 2015-12-19 @ Hotel Shanker, Kathmandu.</p>
 
-                <p>Hosted by RoyalePi</p>
+                <p>Hosted by <span style="color: dodgerblue">RoyalePi</span></p>
 
             </div>
             <!--<div class='instruction'>-->
             <!--Use &nbsp; &lt; &nbsp; and &nbsp; &gt; &nbsp; arrows to navigate-->
             <!--</div>-->
         </section>
-        <section class="fragments" data-background-transition="concave" data-background-color="white">
+        <section>
             <h2>Agenda</h2>
             <ul>
                 <li class="fragment roll-in">About Kathmandu Apache Spark Meetup</li>
@@ -94,7 +95,7 @@
                 </ul>
             </aside>
         </section>
-        <section class="fragments" data-background-transition="concave" data-background-color="white">
+        <section class="fragments">
             <h2>Kathmandu Apache Spark Meetup</h2>
             <ul>
                 <li class="fragment roll-in">It's a community of professionals and enthusiasts</li>
@@ -106,7 +107,7 @@
                 <li class="fragment roll-in">Speakers - local, remote (US and other countries)</li>
             </ul>
         </section>
-        <section data-background-transition="concave" data-background-color="white">
+        <section>
             <section data-background-transition="zoom">
                 <h2>About Me</h2>
 
@@ -506,7 +507,7 @@
                 </div>
             </section>
             <section class="fragments">
-                <h2>What is What is Hadoop?</h2>
+                <h2>What is Hadoop?</h2>
 
                 <p class="fragment roll-in">The Blind Men and the Elephant...</p>
 
@@ -515,22 +516,17 @@
                 </div>
             </section>
             <section>
-
+                <h3>Hadoop is an open-source framework for big data</h3>
                 <ul class="slideList">
                     <img src="image/doug_cutting.jpg">
                     <li class="fragment roll-in">
-                        Hadoop is an open-source framework for big data.
+                        Hadoop was created by Doug Cutting and Mike Cafarella in 2005. Inspired by Google's white papers
                     </li>
                     <li class="fragment roll-in">
-                        Hadoop is reliable and fault tolerant with no rely on hardware for
-                        these properties.
+                        Hadoop is distributed, reliable and fault tolerant
                     </li>
                     <li class="fragment roll-in">
                         Horizontal scalability from single computer to thousands of cluster nodes.
-                    </li>
-                    <li class="fragment roll-in">
-                        Hadoop was created by Doug Cutting and Mike Cafarella in 2005. Inspired by nspired by Google's
-                        white papers
                     </li>
                     <li class="fragment roll-in">
                         MapReduce White Paper by Jorrrey Dean and Sanjay Ghemawat -
@@ -539,7 +535,7 @@
                         </footer>
                     </li>
                     <li class="fragment roll-in">
-                        The Four Hadoop modules - Hadoop Common, HDFS, YARN & MapReduce
+                        The Four modules - Hadoop Common, HDFS, YARN & MapReduce
                     </li>
                 </ul>
                 <aside class="notes">
@@ -551,9 +547,9 @@
 
                             Hadoop managed by the Apache Foundation is a powerful open-source platform written
                             in java that is capable of processing large amounts of heterogeneous data-sets at scale in a
-                            distributive fashion on cluster of computers using simple programming models. It is designed to
-                            scale up from single server to thousands of machines, each offering local computation and storage and
-                            has become an in-demand technical skill.
+                            distributive fashion on cluster of computers using simple programming models. It is designed
+                            to scale up from single server to thousands of machines, each offering local computation and
+                            storage and has become an in-demand technical skill.
                         </li>
                         <li><strong>Hadoop Architecture:</strong>The Apache Hadoop framework includes following four
                             modules:
@@ -561,16 +557,21 @@
                                 <li><strong>Hadoop Common:</strong> Contains Java libraries and utilities needed by
                                     other Hadoop modules. These libraries give filesystem and OS level abstraction and
                                     comprise of the essential Java files and scripts that are required to start Hadoop.
-                                    </li>
-                                    <li><strong>Hadoop Distributed File System (HDFS):</strong> A distributed file-system that provides
-                                    high-throughput access to application data on the community machines thus
-                                    providing very high aggregate bandwidth across the cluster.
-                                    </li>
-                                    <li><strong>Hadoop YARN:</strong> A resource-management framework responsible for job scheduling and
-                                    cluster resource management.</li>
-                                <li><strong>Hadoop MapReduce:</strong> This is a YARN- based programming model for parallel processing of
+                                </li>
+                                <li><strong>Hadoop Distributed File System (HDFS):</strong> A distributed file-system
+                                    that provides
+                                    high-throughput access to application data on the community machines thus providing
+                                    very
+                                    high aggregate bandwidth across the cluster.
+                                </li>
+                                <li><strong>Hadoop YARN:</strong> A resource-management framework responsible for job
+                                    scheduling and
+                                    cluster resource management.
+                                </li>
+                                <li><strong>Hadoop MapReduce:</strong> This is a YARN- based programming model for
+                                    parallel processing of
                                     large data sets.
-                                    </li>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -603,16 +604,15 @@
                         a reliable, fault-tolerant manner. In terms of programming, there are two functions which
                         are most common in MapReduce.
 
-                        The Map Task: Master computer or node takes input and convert it into divide it into smaller
+                        <strong>The Map Task:</strong> Master computer or node takes input and convert it into divide it into smaller
                         parts and distribute it on other worker nodes. All worker nodes solve
                         their own small problem and give answer to the master node.
-                        The Reduce Task: Master node combines all answers coming from worker node and forms it in
+                        <strong>The Reduce Task:</strong> Master node combines all answers coming from worker node and forms it in
                         some form of output which is answer of our big distributed problem.
                         Generally both the input and the output are reserved in a file-system. The framework is
                         responsible for scheduling tasks, monitoring them and even re-executes the
                         failed tasks.
                     </li>
-
                     <li><strong>Hadoop Distributed File System (HDFS)</strong>
 
                         HDFS is a distributed file-system that provides high throughput access to data. When data is
@@ -633,7 +633,6 @@
                         Secondary NameNode: It is responsible for performing periodic checkpoints. In the event of
                         NameNode failure, you can restart the NameNode using the checkpoint.
                     </li>
-
                     <li><strong>Hive:</strong>
 
                         Hive is part of the Hadoop ecosystem and provides an SQL like interface to Hadoop. It is a
@@ -793,7 +792,7 @@
                 <h1>Apache Spark Introduction</h1>
             </section>
             <section>
-                <h1>What is Apache Spark?</h1>
+                <h2>What is Apache Spark?</h2>
 
                 <p>Apache Spark is a cluster computing platform designed to be fast and general-purpose</p>
                 <ul>
@@ -828,15 +827,16 @@
                 </aside>
             </section>
             <section>
-                <h1>History of Spark</h1>
+                <h2>History of Spark</h2>
                 <ul>
-                    <li>created in 2009 at UC Berkeley AMPLab</li>
+                    <li>Created in 2009 at UC Berkeley AMPLab</li>
+                    <li>Mostly Written in Scala</li>
                     <li>Open Sourced in 2010</li>
                     <li>Spark Paper published by Matei Zaharia,
-                        Mosharaf Chowdhury, Michael J. Franklin, Scott Shenker and Ion Stoica.
+                        Mosharaf Chowdhury, Michael J. Franklin, Scott Shenker and Ion Stoica
                     </li>
                     <li>More than 400 developers from more than 100 organizations</li>
-                    <li>It is currently the most active Apache project.</li>
+                    <li>It is currently the most active Apache project</li>
                 </ul>
                 <aside class="notes">
                     Spark was created in 2009 at UC Berkeley AMPLab and was open sourced in 2010.
@@ -849,13 +849,23 @@
                 </aside>
             </section>
             <section>
-                <p>Spark REPL</p>
+                <h3>Spark Vs Hadoop - Tools</h3>
+                <img src="image/spark/spark-vs-hadoop.jpg">
+            </section>
+            <section>
+                <h3>Spark Vs Hadoop - Data Processing</h3>
+                <img src="image/spark/spark-vs-hadoop-processing.jpg">
+            </section>
+            <section>
+                <h3>Commercial Packaging and Distributions</h3>
+                <img src="image/spark/spark-distributors-and-applications.jpg">
+            </section>
+            <section>
                 <pre><code class="bash" data-trim contenteditable>
                     /** Scala REPL **/
 
-                    $ cd $SPARK_HOME
-                    $ bin/spark-shell --master "local[*]" --driver-memory 2G
-
+    $ cd $SPARK_HOME
+    $ bin/spark-shell --master "local[*]" --driver-memory 2G
                 </code></pre>
                 <ul>
                     <li>Spark context available as <strong>sc</strong>.</li>
@@ -863,30 +873,119 @@
                 </ul>
             </section>
             <section>
-                <p>Spark REPL Example - Scala</p>
+                <h3>RDD(Resilient Distributed Dataset)</h3>
+                <ul>
+                    <li>Main Abstraction in Spark</li>
+                    <li>A distributed memory abstraction that lets programmers perform in-memory computations on large
+                        clusters in a fault-tolerant manner</li>
+                    <li>Two ways to create RDDs: </li>
+                    <ul>
+                        <li>Parallelizing an existing collection in your driver program</li>
+                        <li>Referencing a dataset in an external storage system, such as a shared filesystem, HDFS</li>
+                    </ul>
+                    <li>White Papers
+                        <ul class="slideList">
+                            <li>June 2010 - http://www.cs.berkeley.edu/~matei/papers/2010/hotcloud_spark.pdf</li>
+                            <li>April 2012 - http://www.cs.berkeley.edu/~matei/papers/2012/nsdi_spark.pdf</li>
+                        </ul>
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <p>
+                        “The main abstraction in Spark is that of a resilient dis-
+                        tributeddataset (RDD),which represents a read-only collection of objects partitioned across a
+                        set of machines that can be rebuilt if a partition is lost.
+                        Users can explicitly cache an RDD in memory across machines and reuse it in multiple MapReduce-like
+                        parallel operations.
+                        RDDs achieve fault tolerance through a notion of lineage: if a partition of an RDD is lost, the RDD has
+                        enough information about how it was derived from other RDDs to be able to rebuild just that partition.”
+                    </p>
+                </aside>
+            </section>
+            <section>
+                <h3>Creating RDD using an existing collection</h3>
+                <img src="image/spark/spark-rdd-parallelcollection.jpg">
+                <aside class="notes">
+                    Parallelized collections are created by calling SparkContext’s parallelize method on an existing
+                    collection in your driver program (a Scala Seq). The elements of the collection are copied to form
+                    a distributed dataset that can be operated on in parallel.
+
+                    Once created, the distributed dataset (distData) can be operated on in parallel. For example, we might
+                    call distData.reduce((a, b) => a + b) to add up the elements of the array. We describe operations on
+                    distributed datasets later on.
+
+                    One important parameter for parallel collections is the number of partitions to cut the dataset into.
+                    Spark will run one task for each partition of the cluster. Typically you want 2-4 partitions for each
+                    CPU in your cluster. Normally, Spark tries to set the number of partitions automatically based on your
+                    cluster. However, you can also set it manually by passing it as a second parameter to parallelize
+                    (e.g. sc.parallelize(data, 10)). Note: some places in the code use the term slices (a synonym for partitions)
+                    to maintain backward compatibility.
+                </aside>
+            </section>
+            <section>
+                <h3>Creating RDD using external datasets</h3>
+                <img src="image/spark/spark-rdd-external-data.jpg">
+                <aside class="notes">
+                    Spark can create distributed datasets from any storage source supported by Hadoop, including your
+                    local file system, HDFS, Cassandra, HBase, Amazon S3, etc. Spark supports text files, SequenceFiles,
+                    and any other Hadoop InputFormat.
+
+                    Text file RDDs can be created using SparkContext’s textFile method. This method takes an URI for the
+                    file (either a local path on the machine, or a hdfs://, s3n://, etc URI) and reads it as a collection
+                    of lines.
+
+                    Once created, distFile can be acted on by dataset operations. For example, we can add up the sizes
+                    of all the lines using the map and reduce operations as follows:
+                    distFile.map(s => s.length).reduce((a, b) => a + b).
+                    The textFile method also takes an optional second argument for controlling the number of partitions
+                    of the file. By default, Spark creates one partition for each block of the file (blocks being 64MB
+                    by default in HDFS), but you can also ask for a higher number of partitions by passing a larger value.
+                    Note that you cannot have fewer partitions than blocks.
+
+                </aside>
+            </section>
+            <section>
+                <h3>RDD Operations</h3>
+                <ul>
+                    <li>Transformations</li>
+                    <li>Examples:
+                        <ul>
+                            <li>map()</li>
+                            <li>filter()</li>
+                            <li>join()</li>
+                        </ul>
+                    </li>
+                    <li>Actions</li>
+                    <li>Examples:
+                        <ul>
+                            <li>collect()</li>
+                            <li>reduce()</li>
+                            <li>count()</li>
+                        </ul>
+                    </li>
+                    <li>All transformations in Spark are lazy</li>
+                    <li>Can persist an RDD in memory using the persist (or cache) method</li>
+                </ul>
+            </section>
+            <section>
 					<pre><code class="scala" data-trim contenteditable>
                         /** Spark Scala REPL example **/
-                        val listOfNumber = (1 to 10).toList // List[Int]
-                        val numRDD = sc.parallelize(listOfNumber) // RDD[Int]
-                        numRDD.collect // Array[Int]
-                        numRDD.first // Int
-                        numRDD.take(2) // Int
-                        val evenNumRDD = numRDD.filter(_ % 2 == 0)
-                        val oddNumRDD = numRDD.filter(_ % 2 != 0)
-                        evenNumRDD.collect
-                        oddNumRDD.collect
-                        val unionRDD = evenNumRDD.union(oddNumRDD)
-                        unionRDD.collect
-                        val sortedUnionRDD = unionRDD.collect.sorted
-                        sortedUnionRDD.collect
-                        /** end **/
+
+     val listOfNumber = (1 to 10).toList // List[Int]
+     val numRDD = sc.parallelize(listOfNumber) // RDD[Int]
+     numRDD.collect // Array[Int]
+     numRDD.first // Int
+     numRDD.take(2) // Int
+     val evenNumRDD = numRDD.filter(_ % 2 == 0)
+     val oddNumRDD = numRDD.filter(_ % 2 != 0)
+     evenNumRDD.collect
+     oddNumRDD.collect
+     val unionRDD = evenNumRDD.union(oddNumRDD)
+     unionRDD.collect
+     val sortedUnionRDD = unionRDD.collect.sorted
+     sortedUnionRDD.collect
+/** end **/
                     </code></pre>
-            </section>
-            <section>
-                <h1>Spark Architecture</h1>
-            </section>
-            <section>
-                <h1>RDD</h1>
             </section>
             <section>
                 <h1>Spark SQL and DataFrame</h1>
@@ -903,13 +1002,20 @@
             </section>
         </section>
         <section>
-            <h1>Hackathon</h1>
+            <h3>Hackathon</h3>
+            <ul></ul>
         </section>
         <section>
-            <h1>Announcements</h1>
+            <h3>Announcements</h3>
+            <ul>
+                <li>Winners</li>
+                <li>Data Science and Engineering course offerings by RoyalePi</li>
+            </ul>
+
         </section>
         <section>
-            <h1>Thank You!</h1>
+            <h3>Thank You!</h3>
+
         </section>
         <!--<div class="slidesFooter">-->
         <!--<p id="footerCopyRight"><span>Copyright ©2015 RoyalePi Technology</span>-->
