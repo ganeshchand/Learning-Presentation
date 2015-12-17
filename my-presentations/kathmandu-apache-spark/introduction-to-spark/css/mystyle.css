@@ -93,3 +93,6 @@ margin-top: 20px;
     /*margin-top: -25px;*/
 
 }
+.myPreClass {
+    width: 100% !important;
+}

@@ -948,21 +948,18 @@
                 <h3>RDD Operations</h3>
                 <ul>
                     <li>Transformations</li>
-                    <li>Examples:
                         <ul>
                             <li>map()</li>
                             <li>filter()</li>
                             <li>join()</li>
                         </ul>
-                    </li>
                     <li>Actions</li>
-                    <li>Examples:
+
                         <ul>
                             <li>collect()</li>
                             <li>reduce()</li>
                             <li>count()</li>
                         </ul>
-                    </li>
                     <li>All transformations in Spark are lazy</li>
                     <li>Can persist an RDD in memory using the persist (or cache) method</li>
                 </ul>
@@ -988,17 +985,53 @@
                     </code></pre>
             </section>
             <section>
-                <h1>Spark SQL and DataFrame</h1>
+                <h3>Spark SQL and DataFrame</h3>
+                <ul>
+                    <li><strong>Spark SQL</strong> is a Spark module for structured data processing</li>
+                    <li>A <strong>DataFrame</strong> is a distributed collection of data organized into named columns.</li>
+                    <li>registerAsTempTable()</li>
+                </ul>
+                <aside class="notes">
+                    Spark SQL provides a programming abstraction called DataFrames and can also act as distributed SQL query engine.
+                    It is conceptually equivalent to a table in a relational database or a data frame in R/Python,
+                    but with richer optimizations under the hood. DataFrames can be constructed from a wide array of
+                    sources such as: structured data files, tables in Hive, external databases, or existing RDDs.
+                </aside>
+            </section>
+            <section>
+					<pre class="myPreClass"><code class="scala" data-trim contenteditable>
+                        /** Spark SQL and DataFrame **/
+
+  // Create the DataFrame
+  val df = sqlContext.read.json("examples/src/main/resources/people.json")
+
+  df.printSchema() // Print the schema in a tree format
+  df.show() // Show the content of the DataFrame
+  df.select("name").show() // Select only the "name" column
+
+  df.registerTempTable("people") //register it as a table
+  sqlContext.sql("select * from people").show
+/** end **/
+                    </code></pre>
             </section>
         </section>
         <section>
-            <h1>Hands-on</h1>
             <section>
-                <h1>Pre-requsite - Apache Spark is installed and working</h1>
+                <h3>Spark Hands-On</h3>
+            </section>
+            <section>
+                <ul>
+                <li><strong>Pre-requisite</strong> - <u>Apache Spark is installed and working</u></li>
 
-                <p>
-                    http://github.com/ganeshchand/kathmandu-spark-meetup-intro-to-spark/notes/install-spark.md
-                </p>
+                        <li>Installation steps avaialable at:</li>
+                    <a href="http://github.com/ganeshchand/kathmandu-spark-meetup-intro-to-spark/notes/install-spark.md">
+                        http://github.com/ganeshchand/kathmandu-spark-meetup-intro-to-spark/notes/install-spark.md
+                    </a>
+                <li>Data and Source code available at:</li>
+                <a href="https://github.com/ganeshchand/kathmandu-spark-meetup-intro-to-spark">
+                    https://github.com/ganeshchand/kathmandu-spark-meetup-intro-to-spark
+                </a>
+                    </ul>
             </section>
         </section>
         <section>
@@ -1009,7 +1042,6 @@
             <h3>Announcements</h3>
             <ul>
                 <li>Winners</li>
-                <li>Data Science and Engineering course offerings by RoyalePi</li>
             </ul>
 
         </section>
