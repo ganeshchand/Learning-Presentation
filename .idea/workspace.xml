@@ -32,8 +32,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-presentations/kathmandu-apache-spark/introduction-to-spark/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7678917" vertical-offset="16793" max-vertical-offset="17310">
-              <caret line="1146" column="9" selection-start-line="1146" selection-start-column="9" selection-end-line="1146" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.3326886" vertical-offset="15713" max-vertical-offset="17310">
+              <caret line="1059" column="25" selection-start-line="1059" selection-start-column="25" selection-end-line="1059" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -631,12 +631,12 @@
       <workItem from="1447438626543" duration="3784000" />
       <workItem from="1448534421587" duration="13660000" />
       <workItem from="1450022391341" duration="8153000" />
-      <workItem from="1450155186414" duration="29931000" />
+      <workItem from="1450155186414" duration="30089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55528000" />
+    <option name="totallyTimeSpent" value="55686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1070,8 +1070,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-presentations/kathmandu-apache-spark/introduction-to-spark/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7678917" vertical-offset="16793" max-vertical-offset="17310">
-          <caret line="1146" column="9" selection-start-line="1146" selection-start-column="9" selection-end-line="1146" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.3326886" vertical-offset="15713" max-vertical-offset="17310">
+          <caret line="1059" column="25" selection-start-line="1059" selection-start-column="25" selection-end-line="1059" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
